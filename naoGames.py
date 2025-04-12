@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #Mathieu Baba
-#Projet robotique Nao 
+#Programme principal du projet contenant le jeu dans son entiereté
 import time
 import qi
 import speech_recognition as sr
@@ -22,6 +22,7 @@ nao_password="udm2021"
 
 
 
+#------------------------------------------------------------------------- JEU ----------------------------------------------------------------------------------
 
 #Fonction de présentation de Nao
 def presentation():
@@ -113,7 +114,7 @@ def get_question_reponse(numero_question):
 
 
 
-#--------------------------------------------------------PROGRAMME PRINCIPAL----------------------------------------------------------------------------
+#------------------------------------------------------------------ PROGRAMME PRINCIPAL----------------------------------------------------------------------------
 
 
 #Connexion au Nao

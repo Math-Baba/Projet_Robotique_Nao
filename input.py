@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+#Mathieu Baba
+#Programme contenant les fonctions pour convertir les audios passés en entrée de Nao en texte via l'API google_speech_recognition
 import paramiko
 import speech_recognition as sr
 from naoqi import ALProxy
@@ -8,8 +10,8 @@ ip_robot = "11.0.0.85" #ip du robot
 port=9559 #port associé au Nao
 nao_audio_file="/home/nao/recording.wav" #le fichier audio du Nao
 local_audio_file= "./recording.wav" #le fichier audio en local sur la machine
-nao_username="nao"
-nao_password="udm2021"
+nao_username="nao" #nom d'utilisateur de Nao
+nao_password="udm2021" #mot de passe 
 
 
 #Fonction pour écouter les réponses des utilisateurs
@@ -22,8 +24,8 @@ def record_audio():
         pass  # Ignorer l'erreur si aucun enregistrement n'est actif
 
     print("Enregistrement de l'audio...")
-    audio_recorder.startMicrophonesRecording(nao_audio_file, "wav", 16000, (0,0,1,0))
-    time.sleep(5)
+    audio_recorder.startMicrophonesRecording(nao_audio_file, "wav", 16000, (0,0,1,0)) #Démmarage de l'enregistrement audio  
+    time.sleep(5) #Durée de 5 secondes pour l'enregistrement 
     audio_recorder.stopMicrophonesRecording()
     print("Fin de l'enregistrement")
 

@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
+#Mathieu Baba
+#Programme pour passer les questions et les réponses associés dans une base de donnée
 import mysql.connector
+
 
 # Connexion au serveur MySQL
 connection = mysql.connector.connect(

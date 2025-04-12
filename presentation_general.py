@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#Mathieu Baba
+#Programme contenant la phase de présentation de Nao aux enfants de façon général
+
 import qi
 import time
 

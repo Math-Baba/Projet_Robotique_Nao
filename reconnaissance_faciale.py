@@ -94,7 +94,7 @@ def identifier_personne(detected_face, stored_faces):
     return None
 
 # ----------------------------------------------------------------- PROGRAMME RECONNAISSANCE FACIALE ---------------------------------------------------------------------------
-ip_robot = "11.0.0.85"
+ip_robot = "11.0.0.87"
 port = 9559
 
 def reconnaissance_faciale():

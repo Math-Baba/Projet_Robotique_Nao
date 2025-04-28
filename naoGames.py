@@ -13,7 +13,7 @@ import input
 
 
 
-ip_robot = "11.0.0.85" #ip du robot
+ip_robot = "11.0.0.87" #ip du robot
 port=9559 #port associé au Nao
 nao_audio_file="/home/nao/recording.wav" #le fichier audio du Nao
 local_audio_file= "./recording.wav" #le fichier audio en local sur la machine
@@ -56,9 +56,10 @@ def regles():
     reponse = input.speech_to_text()
     if reponse and ("oui" in reponse or "ouais" in reponse):
         return 
-    else :
+    elif reponse is None:
         tts.say("Alors je vais reformuler, tu devras deviner l'animal que je vais décrire. Mais attention tu n'as que 3 chances seulement de répondre juste. Tu as un point si tu as la bonne réponse et pas de points si tu réponds pas bien")
-
+    else:
+        tts.say("Alors je vais reformuler, tu devras deviner l'animal que je vais décrire. Mais attention tu n'as que 3 chances seulement de répondre juste. Tu as un point si tu as la bonne réponse et pas de points si tu réponds pas bien")
 
 
 

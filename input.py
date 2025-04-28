@@ -6,7 +6,7 @@ import speech_recognition as sr
 from naoqi import ALProxy
 import time
 
-ip_robot = "11.0.0.85" #ip du robot
+ip_robot = "11.0.0.87" #ip du robot
 port=9559 #port associé au Nao
 nao_audio_file="/home/nao/recording.wav" #le fichier audio du Nao
 local_audio_file= "./recording.wav" #le fichier audio en local sur la machine

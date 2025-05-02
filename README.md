@@ -14,10 +14,8 @@ devinettes éducatives et des interactions engageantes.
 
 ## Utilisation de l'animation
 
-Téléchargez le logiciel Choregraphe sur le lien suivant :
-```bash 
-https://support.old.unitedrobotics.group/en/support/solutions/articles/80001018812-nao-6-downloads
-```
+Téléchargez le logiciel Choregraphe sur le lien suivant : https://support.old.unitedrobotics.group/en/support/solutions/articles/80001018812-nao-6-downloads
+
 Suivez les étapes d'installation. Une fois terminé, ouvrez le logiciel Choregraphe.
 
 Connectez-vous au robot et ouvrez le fichier National_Hymn.pml dans le dossier National_Hymn.

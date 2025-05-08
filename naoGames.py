@@ -34,7 +34,10 @@ def presentation():
         input.record_audio()
         input.transfer_audio_file()
         reponse = input.speech_to_text()
-        if "oui" in reponse or "ouais" in reponse:
+        if reponse is None:
+            tts.say("Tu peux répéter ?")
+            continue
+        if reponse is not None and "oui" in reponse or "ouais" in reponse:
             regles() 
             break
         elif "non" in reponse :
@@ -51,20 +54,25 @@ def regles():
     tts.say("Voici les règles du jeu, je vais décrire plusieurs animaux marins et tu devras deviner lequel c'est. Tu auras trois chances pour répondre correctement. Si tu réponds bien tu auras un point, si tu réponds faux, tu ne gagnes aucun point")
     time.sleep(0.5)
     tts.say("As-tu compris ?")
-    input.record_audio()
-    input.transfer_audio_file()
-    reponse = input.speech_to_text()
-    if reponse and ("oui" in reponse or "ouais" in reponse):
-        return 
-    elif reponse is None:
-        tts.say("Alors je vais reformuler, tu devras deviner l'animal que je vais décrire. Mais attention tu n'as que 3 chances seulement de répondre juste. Tu as un point si tu as la bonne réponse et pas de points si tu réponds pas bien")
-    else:
-        tts.say("Alors je vais reformuler, tu devras deviner l'animal que je vais décrire. Mais attention tu n'as que 3 chances seulement de répondre juste. Tu as un point si tu as la bonne réponse et pas de points si tu réponds pas bien")
+    while(True): 
+        input.record_audio()
+        input.transfer_audio_file()
+        reponse = input.speech_to_text()
+        if reponse is None:
+            tts.say("Tu peux répéter ?")
+            continue
+        elif reponse is not None and ("oui" in reponse or "ouais" in reponse):
+            return 
+        else:
+            tts.say("Alors je vais reformuler, tu devras deviner l'animal que je vais décrire. Mais attention tu n'as que 3 chances seulement de répondre juste. Tu as un point si tu as la bonne réponse et pas de points si tu réponds pas bien")
+            time.sleep(0.5)
+            tts.say("Passons aux questions maintenant")
+            time.sleep(0.5)
 
 
 
 #Fonction de validation des réponses
-def verification(mot, pts):
+def verification(mot, pts, question):
     tentative=3
     while(tentative>0):
         input.record_audio()
@@ -77,6 +85,12 @@ def verification(mot, pts):
         # Assurez-vous que 'reponse' est au format Unicode
         if isinstance(reponse, str):
             reponse = reponse.decode('utf-8')  # Décodage UTF-8
+
+        if u"répéter" in reponse or u"redire" in reponse or u"redis" in reponse :
+            tts.say("Okay je vais répéter pour toi.     Alors")
+            time.sleep(0.5)
+            tts.say(question)
+            continue
 
         if mot in reponse :
             tts.say("Bonne réponse, tu gagnes 1 points")
@@ -153,7 +167,7 @@ for nombre in nombreAleatoire:
     question, reponse = get_question_reponse(nombre)
     str_question=question.encode('utf-8')#problème avec l'encodage ASCII
     tts.say(str_question)
-    pts=verification(reponse, pts)
+    pts=verification(reponse, pts, str_question)
 
 
 tts.say("Tu as donc {} points sur 5.".format(pts))

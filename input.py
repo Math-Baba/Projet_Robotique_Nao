@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
-#Mathieu Baba
-#Programme contenant les fonctions pour convertir les audios passés en entrée de Nao en texte via l'API google_speech_recognition
+# Mathieu Baba
+# Programme contenant les fonctions pour convertir les audios passés en entrée de Nao en texte via l'API google_speech_recognition
 import paramiko
 import speech_recognition as sr
 from naoqi import ALProxy
 import time
 
-ip_robot = "11.0.0.87" #ip du robot
-port=9559 #port associé au Nao
-nao_audio_file="/home/nao/recording.wav" #le fichier audio du Nao
-local_audio_file= "./recording.wav" #le fichier audio en local sur la machine
-nao_username="nao" #nom d'utilisateur de Nao
-nao_password="udm2021" #mot de passe 
+ip_robot = "11.0.0.98" # ip du robot
+port=9559 # port associé au Nao
+nao_audio_file="/home/nao/recording.wav" # le fichier audio du Nao
+local_audio_file= "./recording.wav" # le fichier audio en local sur la machine
+nao_username="nao" # nom d'utilisateur de Nao
+nao_password="udm2021" # mot de passe du Nao
 
 
-#Fonction pour écouter les réponses des utilisateurs
+# Fonction pour écouter les réponses des utilisateurs
 def record_audio():
     audio_recorder= ALProxy("ALAudioRecorder", ip_robot, port)
 
@@ -25,7 +25,7 @@ def record_audio():
 
     print("Enregistrement de l'audio...")
     audio_recorder.startMicrophonesRecording(nao_audio_file, "wav", 16000, (0,0,1,0)) #Démmarage de l'enregistrement audio  
-    time.sleep(5) #Durée de 5 secondes pour l'enregistrement 
+    time.sleep(5) # Durée de 5 secondes pour l'enregistrement 
     audio_recorder.stopMicrophonesRecording()
     print("Fin de l'enregistrement")
 
@@ -48,7 +48,7 @@ def transfer_audio_file():
 
 
 
-#Fonction pour convertir l'audio en texte
+# Fonction pour convertir l'audio en texte
 def speech_to_text():
     recognizer = sr.Recognizer()
 

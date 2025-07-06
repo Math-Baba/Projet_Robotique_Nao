@@ -13,10 +13,10 @@ import input
 
 
 
-ip_robot = "11.0.0.87" #ip du robot
-port=9559 #port associé au Nao
-nao_audio_file="/home/nao/recording.wav" #le fichier audio du Nao
-local_audio_file= "./recording.wav" #le fichier audio en local sur la machine
+ip_robot = "11.0.0.98" # ip du robot
+port=9559 # port associé au Nao
+nao_audio_file="/home/nao/recording.wav" # le fichier audio du Nao
+local_audio_file= "./recording.wav" # le fichier audio en local sur la machine
 nao_username="nao"
 nao_password="udm2021"
 
@@ -24,7 +24,7 @@ nao_password="udm2021"
 
 #------------------------------------------------------------------------- JEU ----------------------------------------------------------------------------------
 
-#Fonction de présentation de Nao
+# Fonction de présentation de Nao
 def presentation():
 
     time.sleep(0.5)
@@ -71,7 +71,7 @@ def regles():
 
 
 
-#Fonction de validation des réponses
+# Fonction de validation des réponses
 def verification(mot, pts, question):
     tentative=3
     while(tentative>0):
@@ -82,7 +82,7 @@ def verification(mot, pts, question):
             tts.say("Je n'ai pas très bien compris, redis moi")
             continue
 
-        # Assurez-vous que 'reponse' est au format Unicode
+        # Pour s'assurer que 'reponse' soit au format Unicode
         if isinstance(reponse, str):
             reponse = reponse.decode('utf-8')  # Décodage UTF-8
 
@@ -106,9 +106,9 @@ def verification(mot, pts, question):
 
 
 
-#Fonction pour parcourir une table de base de donnée les informations sur les questions et la réponse associée
+# Fonction pour parcourir une table de base de donnée les informations sur les questions et la réponse associée
 def get_question_reponse(numero_question):
-    #connection à la base de données
+    # connection à la base de données
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
@@ -160,17 +160,17 @@ presentation()
 
 
 nombreAleatoire=[]
-nombreAleatoire = random.sample(range(1, 11), 5) #On stocke une liste de nombre aléatoire
+nombreAleatoire = random.sample(range(1, 11), 2) # On stocke une liste de nombre aléatoire
 
 
 for nombre in nombreAleatoire:
     question, reponse = get_question_reponse(nombre)
-    str_question=question.encode('utf-8')#problème avec l'encodage ASCII
+    str_question=question.encode('utf-8')# Problème avec l'encodage ASCII
     tts.say(str_question)
     pts=verification(reponse, pts, str_question)
 
 
-tts.say("Tu as donc {} points sur 5.".format(pts))
+tts.say("Tu as donc {} points sur 2.".format(pts))
 
 session.close()
 print("Connexion fermée")

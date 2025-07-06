@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-#Mathieu Baba
-#Programme pour reconnaitre le visage d'un utilisateur ou de le stocker 
-#s'il n'est pas enregistré dans la base de donnée 
+# Mathieu Baba
+# Programme pour reconnaitre le visage d'un utilisateur ou de le stocker 
+# s'il n'est pas enregistré dans la base de donnée 
 
 import mysql.connector
 import json
@@ -14,7 +14,7 @@ import input
 
 #--------------------------------------------------------------------- CONFIGURATION BASE DE DONNÉES ----------------------------------------------------------------
 
-#Fonction pour créer la table faces si elle n'existe pas dans la base de donnée
+# Fonction pour créer la table faces si elle n'existe pas dans la base de donnée
 def creation_table_si_non_existant():
     connection = mysql.connector.connect(
         host='localhost',
@@ -35,7 +35,7 @@ def creation_table_si_non_existant():
     connection.close()
 
 
-#Fonction pour parcourir la table afin de récuperer les données du visage et les noms associés
+# Fonction pour parcourir la table afin de récuperer les données du visage et les noms associés
 def recuperer_les_donnees_du_visage():
     connection = mysql.connector.connect(
         host='localhost',
@@ -51,7 +51,7 @@ def recuperer_les_donnees_du_visage():
     return results
 
 
-#Fonction pour stocker le nom et les données du visage associées
+# Fonction pour stocker le nom et les données du visage associées
 def stocker_nouveau_visage(name, detected_face):
     creation_table_si_non_existant()
     connection = mysql.connector.connect(
@@ -71,21 +71,21 @@ def stocker_nouveau_visage(name, detected_face):
 
 # -------------------------------------------------------------------------- COMPARAISON DE VISAGES ----------------------------------------------------------------------
 
-#Fonction pour extraire et retourner un vecteur basé sur les informations de forme du visage
+# Fonction pour extraire et retourner un vecteur basé sur les informations de forme du visage
 def vecteur_du_visage(face_data):
     shape_info = face_data[0][1]
     return np.array(shape_info)
 
 
-#Fonction qui calcule la similarité entre deux visages en calculant la distance entre leurs vecteurs de forme
-def similarite_visage(face1, face2, threshold=0.03): #threshold permet de gérer le seuil de similarité (stricte, flou, moyennement flou)
+# Fonction qui calcule la similarité entre deux visages en calculant la distance entre leurs vecteurs de forme
+def similarite_visage(face1, face2, threshold=0.03): # threshold permet de gérer le seuil de similarité (stricte, flou, moyennement flou)
     vec1 = vecteur_du_visage(face1)
     vec2 = vecteur_du_visage(face2)
     distance = np.linalg.norm(vec1 - vec2)
     return distance < threshold
 
 
-#Fonction pour comparer le visage détécté aux visages contenus dans la base de donnée
+# Fonction pour comparer le visage détécté aux visages contenus dans la base de donnée
 def identifier_personne(detected_face, stored_faces):
     for name, face_data in stored_faces:
         face_data_json = json.loads(face_data)
@@ -94,13 +94,13 @@ def identifier_personne(detected_face, stored_faces):
     return None
 
 # ----------------------------------------------------------------- PROGRAMME RECONNAISSANCE FACIALE ---------------------------------------------------------------------------
-ip_robot = "11.0.0.87"
+ip_robot = "11.0.0.98"
 port = 9559
 
 def reconnaissance_faciale():
-    tts = ALProxy("ALTextToSpeech", ip_robot, port) #Création d'un proxy pour que Nao puisse parler
-    faceProxy = ALProxy("ALFaceDetection", ip_robot, port) #Création d'un proxy pour activer la détection de visages
-    memoryProxy = ALProxy("ALMemory", ip_robot, port) #Création d'un proxy pour accéder à la mémoire
+    tts = ALProxy("ALTextToSpeech", ip_robot, port) # Création d'un proxy pour que Nao puisse parler
+    faceProxy = ALProxy("ALFaceDetection", ip_robot, port) # Création d'un proxy pour activer la détection de visages
+    memoryProxy = ALProxy("ALMemory", ip_robot, port) # Création d'un proxy pour accéder à la mémoire
 
     try:
         faceProxy.subscribe("FaceDetection")
@@ -112,7 +112,7 @@ def reconnaissance_faciale():
             time.sleep(5)  # Laisse le temps de détecter un visage
             data = memoryProxy.getData("FaceDetected")
 
-            #Récupération des données brute du visages      
+            # Récupération des données brute du visages      
             if data and isinstance(data, list) and len(data) >= 2:
                 detected_faces = data[1]
                 print("Données détectées :", json.dumps(detected_faces, indent=2))

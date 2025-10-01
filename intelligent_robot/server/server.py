@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import socket
+from AI_model import ai_response
 
 SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 6000
@@ -19,7 +20,21 @@ def start_server():
                     data = conn.recv(1024)
                     if not data:
                         break
-                    print("Message reçu :", data.decode("utf-8"))
+
+                    # Décoder les bytes en string
+                    message = data.decode("utf-8")
+                    print("Message reçu :", message)
+
+                    # Passer la string à l'IA
+                    response = ai_response(message)
+                    if response is None:
+                        response = "Ok"
+
+                    print("Message envoyé : ", response)
+
+                    # Envoyer la réponse encodée
+                    conn.sendall((response + "\n").encode("utf-8"))
+
             except Exception as e:
                 print("Erreur pendant la connexion :", e)
             finally:

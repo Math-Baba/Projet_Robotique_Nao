@@ -8,12 +8,12 @@ from naoqi import ALProxy
 import random
 import mysql.connector
 import reconnaissance_faciale
-import input
+import nao_input
 
 
 
 
-ip_robot = "11.0.0.98" # ip du robot
+ip_robot = "11.0.0.147" # ip du robot
 port=9559 # port associé au Nao
 nao_audio_file="/home/nao/recording.wav" # le fichier audio du Nao
 local_audio_file= "./recording.wav" # le fichier audio en local sur la machine
@@ -31,9 +31,9 @@ def presentation():
     tts.say("Veux-tu que je texplique comment jouer au jeu ?")
 
     while(True) :
-        input.record_audio()
-        input.transfer_audio_file()
-        reponse = input.speech_to_text()
+        nao_input.record_audio()
+        nao_input.transfer_audio_file()
+        reponse = nao_input.speech_to_text()
         if reponse is None:
             tts.say("Tu peux répéter ?")
             continue
@@ -55,9 +55,9 @@ def regles():
     time.sleep(0.5)
     tts.say("As-tu compris ?")
     while(True): 
-        input.record_audio()
-        input.transfer_audio_file()
-        reponse = input.speech_to_text()
+        nao_input.record_audio()
+        nao_input.transfer_audio_file()
+        reponse = nao_input.speech_to_text()
         if reponse is None:
             tts.say("Tu peux répéter ?")
             continue
@@ -75,9 +75,9 @@ def regles():
 def verification(mot, pts, question):
     tentative=3
     while(tentative>0):
-        input.record_audio()
-        input.transfer_audio_file()
-        reponse = input.speech_to_text()
+        nao_input.record_audio()
+        nao_input.transfer_audio_file()
+        reponse = nao_input.speech_to_text()
         if reponse is None:
             tts.say("Je n'ai pas très bien compris, redis moi")
             continue

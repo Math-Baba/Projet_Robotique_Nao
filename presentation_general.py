@@ -5,7 +5,7 @@
 import qi
 import time
 
-ip_robot = "11.0.0.98" #ip du robot
+ip_robot = "11.0.0.147" #ip du robot
 port=9559 #port associé au Nao
 
 

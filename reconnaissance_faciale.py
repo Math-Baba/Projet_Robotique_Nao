@@ -8,7 +8,7 @@ import json
 from naoqi import ALProxy
 import time
 import numpy as np
-import input
+import nao_input
 
 
 
@@ -94,7 +94,7 @@ def identifier_personne(detected_face, stored_faces):
     return None
 
 # ----------------------------------------------------------------- PROGRAMME RECONNAISSANCE FACIALE ---------------------------------------------------------------------------
-ip_robot = "11.0.0.98"
+ip_robot = "11.0.0.147"
 port = 9559
 
 def reconnaissance_faciale():
@@ -128,9 +128,9 @@ def reconnaissance_faciale():
                 else:
                     tts.say("Salut, je m'appelle Nao. Et toi, Comment tu t'appelles ?")
                     while(True):
-                        input.record_audio()
-                        input.transfer_audio_file()
-                        name = input.speech_to_text() 
+                        nao_input.record_audio()
+                        nao_input.transfer_audio_file()
+                        name = nao_input.speech_to_text() 
                         if name is None :
                             tts.say("Peux-tu répéter ?")
                         else:

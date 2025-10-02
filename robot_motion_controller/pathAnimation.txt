@@ -1,0 +1,1935 @@
+============================================================
+LISTE COMPLETE DES ANIMATIONS
+============================================================
+
+1. .lastUploadedChoregrapheBehavior/behavior_1
+2. aldebaran_auto_diagnostic-fe5347
+3. animationMode
+4. animations/LED/CircleEyes
+5. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_1
+6. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_10
+7. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_11
+8. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_12
+9. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_2
+10. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_3
+11. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_4
+12. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_5
+13. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_6
+14. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_7
+15. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_8
+16. animations/Sit/BodyTalk/BodyLanguage/BodyTalk_9
+17. animations/Sit/BodyTalk/Listening/Listening_1
+18. animations/Sit/BodyTalk/Listening/Listening_2
+19. animations/Sit/BodyTalk/Listening/Listening_3
+20. animations/Sit/BodyTalk/Listening/Listening_4
+21. animations/Sit/BodyTalk/Speaking/BodyTalk_1
+22. animations/Sit/BodyTalk/Speaking/BodyTalk_10
+23. animations/Sit/BodyTalk/Speaking/BodyTalk_11
+24. animations/Sit/BodyTalk/Speaking/BodyTalk_12
+25. animations/Sit/BodyTalk/Speaking/BodyTalk_2
+26. animations/Sit/BodyTalk/Speaking/BodyTalk_3
+27. animations/Sit/BodyTalk/Speaking/BodyTalk_4
+28. animations/Sit/BodyTalk/Speaking/BodyTalk_5
+29. animations/Sit/BodyTalk/Speaking/BodyTalk_6
+30. animations/Sit/BodyTalk/Speaking/BodyTalk_7
+31. animations/Sit/BodyTalk/Speaking/BodyTalk_8
+32. animations/Sit/BodyTalk/Speaking/BodyTalk_9
+33. animations/Sit/BodyTalk/Thinking/Remember_1
+34. animations/Sit/BodyTalk/Thinking/Remember_2
+35. animations/Sit/BodyTalk/Thinking/Remember_3
+36. animations/Sit/BodyTalk/Thinking/ThinkingLoop_1
+37. animations/Sit/BodyTalk/Thinking/ThinkingLoop_2
+38. animations/Sit/Emotions/Negative/Angry_1
+39. animations/Sit/Emotions/Negative/Fear_1
+40. animations/Sit/Emotions/Negative/Frustrated_1
+41. animations/Sit/Emotions/Negative/Hurt_1
+42. animations/Sit/Emotions/Negative/Late_1
+43. animations/Sit/Emotions/Negative/Sad_1
+44. animations/Sit/Emotions/Negative/Surprise_1
+45. animations/Sit/Emotions/Neutral/AskForAttention_1
+46. animations/Sit/Emotions/Neutral/AskForAttention_2
+47. animations/Sit/Emotions/Neutral/AskForAttention_3
+48. animations/Sit/Emotions/Neutral/Sneeze_1
+49. animations/Sit/Emotions/Positive/Happy_1
+50. animations/Sit/Emotions/Positive/Happy_2
+51. animations/Sit/Emotions/Positive/Happy_3
+52. animations/Sit/Emotions/Positive/Happy_4
+53. animations/Sit/Emotions/Positive/Hungry_1
+54. animations/Sit/Emotions/Positive/Laugh_1
+55. animations/Sit/Emotions/Positive/Laugh_2
+56. animations/Sit/Emotions/Positive/Mocker_1
+57. animations/Sit/Emotions/Positive/Shy_1
+58. animations/Sit/Emotions/Positive/Winner_1
+59. animations/Sit/Gestures/ComeOn_1
+60. animations/Sit/Gestures/Hey_3
+61. animations/Sit/Gestures/Me_7
+62. animations/Sit/Gestures/You_4
+63. animations/Sit/Reactions/BumperLeft_1
+64. animations/Sit/Reactions/BumperRight_1
+65. animations/Sit/Reactions/Bumpers_1
+66. animations/Sit/Reactions/Bumpers_2
+67. animations/Sit/Reactions/Bumpers_3
+68. animations/Sit/Reactions/EthernetOff_1
+69. animations/Sit/Reactions/EthernetOn_1
+70. animations/Sit/Reactions/Heat_1
+71. animations/Sit/Reactions/LightShine_1
+72. animations/Sit/Reactions/LightShine_2
+73. animations/Sit/Reactions/LightShine_3
+74. animations/Sit/Reactions/LightShine_4
+75. animations/Sit/Reactions/SeeColor_1
+76. animations/Sit/Reactions/SeeColor_2
+77. animations/Sit/Reactions/SeeColor_3
+78. animations/Sit/Reactions/ShakeBody_1
+79. animations/Sit/Reactions/ShakeBody_2
+80. animations/Sit/Reactions/ShakeBody_3
+81. animations/Sit/Reactions/TouchHead_1
+82. animations/Sit/Reactions/TouchHead_2
+83. animations/Sit/Reactions/TouchHead_3
+84. animations/Sit/Reactions/TouchHead_4
+85. animations/Sit/Waiting/AutoFormat_1
+86. animations/Sit/Waiting/Binoculars_1
+87. animations/Sit/Waiting/Bored_1
+88. animations/Sit/Waiting/CallSomeone_1
+89. animations/Sit/Waiting/CatchFly_1
+90. animations/Sit/Waiting/Cramp_1
+91. animations/Sit/Waiting/DriveCar_1
+92. animations/Sit/Waiting/FalseStop_1
+93. animations/Sit/Waiting/FalseStop_2
+94. animations/Sit/Waiting/Fitness_1
+95. animations/Sit/Waiting/GeoCircle_1
+96. animations/Sit/Waiting/GeoSquare_1
+97. animations/Sit/Waiting/GeoTriangle_1
+98. animations/Sit/Waiting/KnockEye_1
+99. animations/Sit/Waiting/KnockKnee_1
+100. animations/Sit/Waiting/KnockKnee_2
+101. animations/Sit/Waiting/LookHand_1
+102. animations/Sit/Waiting/LookHand_2
+103. animations/Sit/Waiting/Music_HighwayToHell_1
+104. animations/Sit/Waiting/Music_VieEnRose_1
+105. animations/Sit/Waiting/MysticalPower_1
+106. animations/Sit/Waiting/Oar_1
+107. animations/Sit/Waiting/Phone_1
+108. animations/Sit/Waiting/PlayHands_1
+109. animations/Sit/Waiting/PlayHands_2
+110. animations/Sit/Waiting/PlayHands_3
+111. animations/Sit/Waiting/Pong_1
+112. animations/Sit/Waiting/PoorlySeated_1
+113. animations/Sit/Waiting/Puppet_1
+114. animations/Sit/Waiting/Relaxation_1
+115. animations/Sit/Waiting/Relaxation_2
+116. animations/Sit/Waiting/Relaxation_3
+117. animations/Sit/Waiting/Rest_1
+118. animations/Sit/Waiting/Robot_1
+119. animations/Sit/Waiting/ScratchBack_1
+120. animations/Sit/Waiting/ScratchEye_1
+121. animations/Sit/Waiting/ScratchHand_1
+122. animations/Sit/Waiting/ScratchHead_1
+123. animations/Sit/Waiting/ScratchLeg_1
+124. animations/Sit/Waiting/ScratchTorso_1
+125. animations/Sit/Waiting/TakePicture_1
+126. animations/Sit/Waiting/Think_1
+127. animations/Sit/Waiting/Think_2
+128. animations/Sit/Waiting/Think_3
+129. animations/Sit/Waiting/WakeUp_1
+130. animations/Sit/Waiting/Yawn_1
+131. animations/Sit/Waiting/ZenCircles_1
+132. animations/SitOnPod/BodyTalk/Listening/Listening_1
+133. animations/SitOnPod/BodyTalk/Listening/Listening_2
+134. animations/SitOnPod/BodyTalk/Listening/Listening_3
+135. animations/SitOnPod/BodyTalk/Listening/Listening_4
+136. animations/SitOnPod/BodyTalk/Listening/Listening_5
+137. animations/SitOnPod/BodyTalk/Listening/Listening_6
+138. animations/SitOnPod/BodyTalk/Listening/Listening_7
+139. animations/SitOnPod/BodyTalk/Listening/Listening_8
+140. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_1
+141. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_10
+142. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_11
+143. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_12
+144. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_2
+145. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_3
+146. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_4
+147. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_5
+148. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_6
+149. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_7
+150. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_8
+151. animations/SitOnPod/BodyTalk/Speaking/BodyTalk_9
+152. animations/SitOnPod/BodyTalk/Thinking/Remember_1
+153. animations/SitOnPod/BodyTalk/Thinking/Remember_2
+154. animations/SitOnPod/BodyTalk/Thinking/Remember_3
+155. animations/SitOnPod/BodyTalk/Thinking/ThinkingLoop_1
+156. animations/SitOnPod/BodyTalk/Thinking/ThinkingLoop_2
+157. animations/SitOnPod/Emotions/Neutral/Hello_1
+158. animations/SitOnPod/Gestures/Choice_1
+159. animations/SitOnPod/Gestures/CountThree_1
+160. animations/SitOnPod/Gestures/CountThree_2
+161. animations/SitOnPod/Gestures/CountTwo_1
+162. animations/SitOnPod/Gestures/CountTwo_2
+163. animations/SitOnPod/Gestures/Everything_1
+164. animations/SitOnPod/Gestures/Everything_2
+165. animations/SitOnPod/Gestures/Everything_3
+166. animations/SitOnPod/Gestures/Everything_4
+167. animations/SitOnPod/Gestures/Everything_6
+168. animations/SitOnPod/Gestures/HeSays_1
+169. animations/SitOnPod/Gestures/HeSays_2
+170. animations/SitOnPod/Gestures/HeSays_3
+171. animations/SitOnPod/Gestures/Hey_1
+172. animations/SitOnPod/Gestures/Hey_2
+173. animations/SitOnPod/Gestures/Hey_3
+174. animations/SitOnPod/Gestures/Hey_4
+175. animations/SitOnPod/Gestures/Hey_6
+176. animations/SitOnPod/Gestures/Hey_7
+177. animations/SitOnPod/Gestures/Me_1
+178. animations/SitOnPod/Gestures/Me_2
+179. animations/SitOnPod/Gestures/Me_4
+180. animations/SitOnPod/Gestures/Me_7
+181. animations/SitOnPod/Gestures/Me_8
+182. animations/SitOnPod/Gestures/No_1
+183. animations/SitOnPod/Gestures/No_2
+184. animations/SitOnPod/Gestures/No_3
+185. animations/SitOnPod/Gestures/No_4
+186. animations/SitOnPod/Gestures/No_5
+187. animations/SitOnPod/Gestures/No_6
+188. animations/SitOnPod/Gestures/No_7
+189. animations/SitOnPod/Gestures/No_8
+190. animations/SitOnPod/Gestures/No_9
+191. animations/SitOnPod/Gestures/This_1
+192. animations/SitOnPod/Gestures/This_10
+193. animations/SitOnPod/Gestures/This_11
+194. animations/SitOnPod/Gestures/This_12
+195. animations/SitOnPod/Gestures/This_13
+196. animations/SitOnPod/Gestures/This_14
+197. animations/SitOnPod/Gestures/This_15
+198. animations/SitOnPod/Gestures/This_2
+199. animations/SitOnPod/Gestures/This_3
+200. animations/SitOnPod/Gestures/This_4
+201. animations/SitOnPod/Gestures/This_5
+202. animations/SitOnPod/Gestures/This_6
+203. animations/SitOnPod/Gestures/This_7
+204. animations/SitOnPod/Gestures/This_8
+205. animations/SitOnPod/Gestures/This_9
+206. animations/SitOnPod/Gestures/WhatSThis_1
+207. animations/SitOnPod/Gestures/WhatSThis_10
+208. animations/SitOnPod/Gestures/WhatSThis_11
+209. animations/SitOnPod/Gestures/WhatSThis_12
+210. animations/SitOnPod/Gestures/WhatSThis_13
+211. animations/SitOnPod/Gestures/WhatSThis_14
+212. animations/SitOnPod/Gestures/WhatSThis_15
+213. animations/SitOnPod/Gestures/WhatSThis_16
+214. animations/SitOnPod/Gestures/WhatSThis_2
+215. animations/SitOnPod/Gestures/WhatSThis_3
+216. animations/SitOnPod/Gestures/WhatSThis_4
+217. animations/SitOnPod/Gestures/WhatSThis_5
+218. animations/SitOnPod/Gestures/WhatSThis_6
+219. animations/SitOnPod/Gestures/WhatSThis_7
+220. animations/SitOnPod/Gestures/WhatSThis_8
+221. animations/SitOnPod/Gestures/WhatSThis_9
+222. animations/SitOnPod/Gestures/Yes_1
+223. animations/SitOnPod/Gestures/Yes_2
+224. animations/SitOnPod/Gestures/Yes_3
+225. animations/SitOnPod/Gestures/You_1
+226. animations/SitOnPod/Gestures/You_2
+227. animations/SitOnPod/Gestures/You_3
+228. animations/SitOnPod/Gestures/You_4
+229. animations/SitOnPod/Gestures/You_5
+230. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_01
+231. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_02
+232. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_04
+233. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_05
+234. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_06
+235. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_07
+236. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_08
+237. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_09
+238. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_10
+239. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_11
+240. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_12
+241. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_13
+242. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_01
+243. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_02
+244. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_03
+245. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_05
+246. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_06
+247. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_01
+248. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_02
+249. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_04
+250. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_05
+251. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_06
+252. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_07
+253. animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_08
+254. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_02
+255. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_04
+256. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_05
+257. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_06
+258. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Slow_AFF_01
+259. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Slow_AFF_02
+260. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Slow_AFF_03
+261. animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Strong_AFF_02
+262. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_02
+263. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_04
+264. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_05
+265. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_06
+266. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Slow_AFF_01
+267. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Slow_AFF_02
+268. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Slow_AFF_03
+269. animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Strong_AFF_02
+270. animations/Stand/BodyTalk/Listening/ListeningLeft_1
+271. animations/Stand/BodyTalk/Listening/ListeningLeft_3
+272. animations/Stand/BodyTalk/Listening/ListeningRight_1
+273. animations/Stand/BodyTalk/Listening/ListeningRight_3
+274. animations/Stand/BodyTalk/Listening/Listening_2
+275. animations/Stand/BodyTalk/Speaking/BodyTalk_1
+276. animations/Stand/BodyTalk/Speaking/BodyTalk_10
+277. animations/Stand/BodyTalk/Speaking/BodyTalk_11
+278. animations/Stand/BodyTalk/Speaking/BodyTalk_12
+279. animations/Stand/BodyTalk/Speaking/BodyTalk_13
+280. animations/Stand/BodyTalk/Speaking/BodyTalk_14
+281. animations/Stand/BodyTalk/Speaking/BodyTalk_15
+282. animations/Stand/BodyTalk/Speaking/BodyTalk_16
+283. animations/Stand/BodyTalk/Speaking/BodyTalk_17
+284. animations/Stand/BodyTalk/Speaking/BodyTalk_18
+285. animations/Stand/BodyTalk/Speaking/BodyTalk_19
+286. animations/Stand/BodyTalk/Speaking/BodyTalk_2
+287. animations/Stand/BodyTalk/Speaking/BodyTalk_20
+288. animations/Stand/BodyTalk/Speaking/BodyTalk_21
+289. animations/Stand/BodyTalk/Speaking/BodyTalk_22
+290. animations/Stand/BodyTalk/Speaking/BodyTalk_3
+291. animations/Stand/BodyTalk/Speaking/BodyTalk_4
+292. animations/Stand/BodyTalk/Speaking/BodyTalk_5
+293. animations/Stand/BodyTalk/Speaking/BodyTalk_6
+294. animations/Stand/BodyTalk/Speaking/BodyTalk_7
+295. animations/Stand/BodyTalk/Speaking/BodyTalk_8
+296. animations/Stand/BodyTalk/Speaking/BodyTalk_9
+297. animations/Stand/BodyTalk/Thinking/Remember_1
+298. animations/Stand/BodyTalk/Thinking/Remember_2
+299. animations/Stand/BodyTalk/Thinking/Remember_3
+300. animations/Stand/BodyTalk/Thinking/ThinkingLoop_1
+301. animations/Stand/BodyTalk/Thinking/ThinkingLoop_2
+302. animations/Stand/Emotions/Negative/Angry_1
+303. animations/Stand/Emotions/Negative/Angry_2
+304. animations/Stand/Emotions/Negative/Angry_3
+305. animations/Stand/Emotions/Negative/Angry_4
+306. animations/Stand/Emotions/Negative/Anxious_1
+307. animations/Stand/Emotions/Negative/Bored_1
+308. animations/Stand/Emotions/Negative/Bored_2
+309. animations/Stand/Emotions/Negative/Disappointed_1
+310. animations/Stand/Emotions/Negative/Exhausted_1
+311. animations/Stand/Emotions/Negative/Exhausted_2
+312. animations/Stand/Emotions/Negative/Fear_1
+313. animations/Stand/Emotions/Negative/Fear_2
+314. animations/Stand/Emotions/Negative/Fearful_1
+315. animations/Stand/Emotions/Negative/Frustrated_1
+316. animations/Stand/Emotions/Negative/Humiliated_1
+317. animations/Stand/Emotions/Negative/Hurt_1
+318. animations/Stand/Emotions/Negative/Hurt_2
+319. animations/Stand/Emotions/Negative/Late_1
+320. animations/Stand/Emotions/Negative/Sad_1
+321. animations/Stand/Emotions/Negative/Sad_2
+322. animations/Stand/Emotions/Negative/Shocked_1
+323. animations/Stand/Emotions/Negative/Sorry_1
+324. animations/Stand/Emotions/Negative/Surprise_1
+325. animations/Stand/Emotions/Negative/Surprise_2
+326. animations/Stand/Emotions/Negative/Surprise_3
+327. animations/Stand/Emotions/Neutral/Alienated_1
+328. animations/Stand/Emotions/Neutral/Annoyed_1
+329. animations/Stand/Emotions/Neutral/AskForAttention_1
+330. animations/Stand/Emotions/Neutral/AskForAttention_2
+331. animations/Stand/Emotions/Neutral/AskForAttention_3
+332. animations/Stand/Emotions/Neutral/Cautious_1
+333. animations/Stand/Emotions/Neutral/Confused_1
+334. animations/Stand/Emotions/Neutral/Determined_1
+335. animations/Stand/Emotions/Neutral/Embarrassed_1
+336. animations/Stand/Emotions/Neutral/Hello_1
+337. animations/Stand/Emotions/Neutral/Hesitation_1
+338. animations/Stand/Emotions/Neutral/Innocent_1
+339. animations/Stand/Emotions/Neutral/Lonely_1
+340. animations/Stand/Emotions/Neutral/Mischievous_1
+341. animations/Stand/Emotions/Neutral/Puzzled_1
+342. animations/Stand/Emotions/Neutral/Sneeze
+343. animations/Stand/Emotions/Neutral/Stubborn_1
+344. animations/Stand/Emotions/Neutral/Suspicious_1
+345. animations/Stand/Emotions/Positive/Amused_1
+346. animations/Stand/Emotions/Positive/Confident_1
+347. animations/Stand/Emotions/Positive/Ecstatic_1
+348. animations/Stand/Emotions/Positive/Enthusiastic_1
+349. animations/Stand/Emotions/Positive/Excited_1
+350. animations/Stand/Emotions/Positive/Excited_2
+351. animations/Stand/Emotions/Positive/Excited_3
+352. animations/Stand/Emotions/Positive/Happy_1
+353. animations/Stand/Emotions/Positive/Happy_2
+354. animations/Stand/Emotions/Positive/Happy_3
+355. animations/Stand/Emotions/Positive/Happy_4
+356. animations/Stand/Emotions/Positive/Hungry_1
+357. animations/Stand/Emotions/Positive/Hysterical_1
+358. animations/Stand/Emotions/Positive/Interested_1
+359. animations/Stand/Emotions/Positive/Interested_2
+360. animations/Stand/Emotions/Positive/Laugh_1
+361. animations/Stand/Emotions/Positive/Laugh_2
+362. animations/Stand/Emotions/Positive/Laugh_3
+363. animations/Stand/Emotions/Positive/Mocker_1
+364. animations/Stand/Emotions/Positive/Optimistic_1
+365. animations/Stand/Emotions/Positive/Peaceful_1
+366. animations/Stand/Emotions/Positive/Proud_1
+367. animations/Stand/Emotions/Positive/Proud_2
+368. animations/Stand/Emotions/Positive/Proud_3
+369. animations/Stand/Emotions/Positive/Relieved_1
+370. animations/Stand/Emotions/Positive/Shy_1
+371. animations/Stand/Emotions/Positive/Shy_2
+372. animations/Stand/Emotions/Positive/Sure_1
+373. animations/Stand/Emotions/Positive/Winner_1
+374. animations/Stand/Emotions/Positive/Winner_2
+375. animations/Stand/Enumeration/NAO/Center_Neutral_ENU_01
+376. animations/Stand/Enumeration/NAO/Center_Neutral_ENU_02
+377. animations/Stand/Enumeration/NAO/Center_Neutral_ENU_03
+378. animations/Stand/Enumeration/NAO/Center_Neutral_ENU_04
+379. animations/Stand/Enumeration/NAO/Center_Neutral_ENU_06
+380. animations/Stand/Enumeration/NAO/Center_Neutral_ENU_07
+381. animations/Stand/Enumeration/NAO/Center_Slow_ENU_01
+382. animations/Stand/Enumeration/NAO/Center_Slow_ENU_02
+383. animations/Stand/Enumeration/NAO/Center_Slow_ENU_03
+384. animations/Stand/Enumeration/NAO/Center_Slow_ENU_04
+385. animations/Stand/Enumeration/NAO/Center_Strong_ENU_01
+386. animations/Stand/Enumeration/NAO/Center_Strong_ENU_02
+387. animations/Stand/Enumeration/NAO/Center_Strong_ENU_03
+388. animations/Stand/Enumeration/NAO/Left_Neutral_ENU_01
+389. animations/Stand/Enumeration/NAO/Left_Neutral_ENU_02
+390. animations/Stand/Enumeration/NAO/Left_Neutral_ENU_03
+391. animations/Stand/Enumeration/NAO/Left_Neutral_ENU_04
+392. animations/Stand/Enumeration/NAO/Left_Neutral_ENU_05
+393. animations/Stand/Enumeration/NAO/Left_Strong_ENU_02
+394. animations/Stand/Enumeration/NAO/Left_Strong_ENU_03
+395. animations/Stand/Enumeration/NAO/Left_Strong_ENU_04
+396. animations/Stand/Enumeration/NAO/Right_Neutral_ENU_01
+397. animations/Stand/Enumeration/NAO/Right_Neutral_ENU_02
+398. animations/Stand/Enumeration/NAO/Right_Neutral_ENU_03
+399. animations/Stand/Enumeration/NAO/Right_Neutral_ENU_04
+400. animations/Stand/Enumeration/NAO/Right_Neutral_ENU_05
+401. animations/Stand/Enumeration/NAO/Right_Strong_ENU_02
+402. animations/Stand/Enumeration/NAO/Right_Strong_ENU_03
+403. animations/Stand/Enumeration/NAO/Right_Strong_ENU_04
+404. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_01
+405. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_02
+406. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_03
+407. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_04
+408. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_05
+409. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_06
+410. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_07
+411. animations/Stand/Exclamation/NAO/Center_Neutral_EXC_08
+412. animations/Stand/Exclamation/NAO/Center_Slow_EXC_01
+413. animations/Stand/Exclamation/NAO/Center_Slow_EXC_02
+414. animations/Stand/Exclamation/NAO/Center_Slow_EXC_03
+415. animations/Stand/Exclamation/NAO/Center_Strong_EXC_03
+416. animations/Stand/Exclamation/NAO/Center_Strong_EXC_04
+417. animations/Stand/Exclamation/NAO/Center_Strong_EXC_05
+418. animations/Stand/Exclamation/NAO/Center_Strong_EXC_06
+419. animations/Stand/Exclamation/NAO/Center_Strong_EXC_08
+420. animations/Stand/Exclamation/NAO/Center_Strong_EXC_09
+421. animations/Stand/Exclamation/NAO/Center_Strong_EXC_10
+422. animations/Stand/Exclamation/NAO/Left_Neutral_EXC_02
+423. animations/Stand/Exclamation/NAO/Left_Neutral_EXC_05
+424. animations/Stand/Exclamation/NAO/Left_Strong_EXC_01
+425. animations/Stand/Exclamation/NAO/Left_Strong_EXC_02
+426. animations/Stand/Exclamation/NAO/Left_Strong_EXC_03
+427. animations/Stand/Exclamation/NAO/Left_Strong_EXC_04
+428. animations/Stand/Exclamation/NAO/Right_Neutral_EXC_02
+429. animations/Stand/Exclamation/NAO/Right_Neutral_EXC_05
+430. animations/Stand/Exclamation/NAO/Right_Strong_EXC_01
+431. animations/Stand/Exclamation/NAO/Right_Strong_EXC_02
+432. animations/Stand/Exclamation/NAO/Right_Strong_EXC_03
+433. animations/Stand/Exclamation/NAO/Right_Strong_EXC_04
+434. animations/Stand/Gestures/Angry_1
+435. animations/Stand/Gestures/Angry_2
+436. animations/Stand/Gestures/Angry_3
+437. animations/Stand/Gestures/Applause_1
+438. animations/Stand/Gestures/BowShort_1
+439. animations/Stand/Gestures/But_1
+440. animations/Stand/Gestures/CalmDown_1
+441. animations/Stand/Gestures/CalmDown_2
+442. animations/Stand/Gestures/CalmDown_3
+443. animations/Stand/Gestures/CalmDown_4
+444. animations/Stand/Gestures/CalmDown_5
+445. animations/Stand/Gestures/CalmDown_6
+446. animations/Stand/Gestures/Caress_1
+447. animations/Stand/Gestures/Caress_2
+448. animations/Stand/Gestures/CatchFly_1
+449. animations/Stand/Gestures/CatchFly_2
+450. animations/Stand/Gestures/Choice_1
+451. animations/Stand/Gestures/Choice_2
+452. animations/Stand/Gestures/Claw_1
+453. animations/Stand/Gestures/Claw_2
+454. animations/Stand/Gestures/Coaxing_1
+455. animations/Stand/Gestures/Coaxing_2
+456. animations/Stand/Gestures/ComeOn_1
+457. animations/Stand/Gestures/Confused_1
+458. animations/Stand/Gestures/Confused_2
+459. animations/Stand/Gestures/CountFive_1
+460. animations/Stand/Gestures/CountFive_2
+461. animations/Stand/Gestures/CountFour_1
+462. animations/Stand/Gestures/CountFour_2
+463. animations/Stand/Gestures/CountMore_1
+464. animations/Stand/Gestures/CountMore_2
+465. animations/Stand/Gestures/CountOne_1
+466. animations/Stand/Gestures/CountOne_2
+467. animations/Stand/Gestures/CountThree_1
+468. animations/Stand/Gestures/CountThree_2
+469. animations/Stand/Gestures/CountTwo_1
+470. animations/Stand/Gestures/CountTwo_2
+471. animations/Stand/Gestures/Desperate_1
+472. animations/Stand/Gestures/Desperate_2
+473. animations/Stand/Gestures/Desperate_3
+474. animations/Stand/Gestures/Desperate_4
+475. animations/Stand/Gestures/Desperate_5
+476. animations/Stand/Gestures/Enthusiastic_1
+477. animations/Stand/Gestures/Enthusiastic_2
+478. animations/Stand/Gestures/Enthusiastic_3
+479. animations/Stand/Gestures/Enthusiastic_4
+480. animations/Stand/Gestures/Enthusiastic_5
+481. animations/Stand/Gestures/Everything_1
+482. animations/Stand/Gestures/Everything_2
+483. animations/Stand/Gestures/Everything_3
+484. animations/Stand/Gestures/Everything_4
+485. animations/Stand/Gestures/Everything_5
+486. animations/Stand/Gestures/Everything_6
+487. animations/Stand/Gestures/Excited_1
+488. animations/Stand/Gestures/Explain_1
+489. animations/Stand/Gestures/Explain_10
+490. animations/Stand/Gestures/Explain_11
+491. animations/Stand/Gestures/Explain_2
+492. animations/Stand/Gestures/Explain_3
+493. animations/Stand/Gestures/Explain_4
+494. animations/Stand/Gestures/Explain_5
+495. animations/Stand/Gestures/Explain_6
+496. animations/Stand/Gestures/Explain_7
+497. animations/Stand/Gestures/Explain_8
+498. animations/Stand/Gestures/Explain_9
+499. animations/Stand/Gestures/Far_1
+500. animations/Stand/Gestures/Far_2
+501. animations/Stand/Gestures/Far_3
+502. animations/Stand/Gestures/Follow_1
+503. animations/Stand/Gestures/Freeze_1
+504. animations/Stand/Gestures/Give_1
+505. animations/Stand/Gestures/Give_2
+506. animations/Stand/Gestures/Give_3
+507. animations/Stand/Gestures/Give_4
+508. animations/Stand/Gestures/Give_5
+509. animations/Stand/Gestures/Give_6
+510. animations/Stand/Gestures/Great_1
+511. animations/Stand/Gestures/HeSays_1
+512. animations/Stand/Gestures/HeSays_2
+513. animations/Stand/Gestures/HeSays_3
+514. animations/Stand/Gestures/Hey_1
+515. animations/Stand/Gestures/Hey_2
+516. animations/Stand/Gestures/Hey_3
+517. animations/Stand/Gestures/Hey_4
+518. animations/Stand/Gestures/Hey_5
+519. animations/Stand/Gestures/Hey_6
+520. animations/Stand/Gestures/Hey_7
+521. animations/Stand/Gestures/Hide_1
+522. animations/Stand/Gestures/Hungry_1
+523. animations/Stand/Gestures/IDontKnow_1
+524. animations/Stand/Gestures/IDontKnow_2
+525. animations/Stand/Gestures/IDontKnow_3
+526. animations/Stand/Gestures/IDontKnow_4
+527. animations/Stand/Gestures/IDontKnow_5
+528. animations/Stand/Gestures/IDontKnow_6
+529. animations/Stand/Gestures/JointHands_1
+530. animations/Stand/Gestures/JointHands_2
+531. animations/Stand/Gestures/JointHands_3
+532. animations/Stand/Gestures/Joy_1
+533. animations/Stand/Gestures/Kisses_1
+534. animations/Stand/Gestures/Look_1
+535. animations/Stand/Gestures/Look_2
+536. animations/Stand/Gestures/Maybe_1
+537. animations/Stand/Gestures/Me_1
+538. animations/Stand/Gestures/Me_2
+539. animations/Stand/Gestures/Me_3
+540. animations/Stand/Gestures/Me_4
+541. animations/Stand/Gestures/Me_5
+542. animations/Stand/Gestures/Me_6
+543. animations/Stand/Gestures/Me_7
+544. animations/Stand/Gestures/Me_8
+545. animations/Stand/Gestures/Mime_1
+546. animations/Stand/Gestures/Mime_2
+547. animations/Stand/Gestures/Next_1
+548. animations/Stand/Gestures/No_1
+549. animations/Stand/Gestures/No_2
+550. animations/Stand/Gestures/No_3
+551. animations/Stand/Gestures/No_4
+552. animations/Stand/Gestures/No_5
+553. animations/Stand/Gestures/No_6
+554. animations/Stand/Gestures/No_7
+555. animations/Stand/Gestures/No_8
+556. animations/Stand/Gestures/No_9
+557. animations/Stand/Gestures/Nothing_1
+558. animations/Stand/Gestures/Nothing_2
+559. animations/Stand/Gestures/OnTheEvening_1
+560. animations/Stand/Gestures/OnTheEvening_2
+561. animations/Stand/Gestures/OnTheEvening_3
+562. animations/Stand/Gestures/OnTheEvening_4
+563. animations/Stand/Gestures/OnTheEvening_5
+564. animations/Stand/Gestures/Please_1
+565. animations/Stand/Gestures/Please_2
+566. animations/Stand/Gestures/Please_3
+567. animations/Stand/Gestures/Reject_1
+568. animations/Stand/Gestures/Reject_2
+569. animations/Stand/Gestures/Reject_3
+570. animations/Stand/Gestures/Reject_4
+571. animations/Stand/Gestures/Reject_5
+572. animations/Stand/Gestures/Reject_6
+573. animations/Stand/Gestures/Salute_1
+574. animations/Stand/Gestures/Salute_2
+575. animations/Stand/Gestures/Salute_3
+576. animations/Stand/Gestures/Shoot_1
+577. animations/Stand/Gestures/ShowFloor_1
+578. animations/Stand/Gestures/ShowFloor_2
+579. animations/Stand/Gestures/ShowFloor_3
+580. animations/Stand/Gestures/ShowFloor_4
+581. animations/Stand/Gestures/ShowFloor_5
+582. animations/Stand/Gestures/ShowSky_1
+583. animations/Stand/Gestures/ShowSky_10
+584. animations/Stand/Gestures/ShowSky_11
+585. animations/Stand/Gestures/ShowSky_12
+586. animations/Stand/Gestures/ShowSky_2
+587. animations/Stand/Gestures/ShowSky_3
+588. animations/Stand/Gestures/ShowSky_4
+589. animations/Stand/Gestures/ShowSky_5
+590. animations/Stand/Gestures/ShowSky_6
+591. animations/Stand/Gestures/ShowSky_7
+592. animations/Stand/Gestures/ShowSky_8
+593. animations/Stand/Gestures/ShowSky_9
+594. animations/Stand/Gestures/Shy_1
+595. animations/Stand/Gestures/Stretch_1
+596. animations/Stand/Gestures/Stretch_2
+597. animations/Stand/Gestures/Surprised_1
+598. animations/Stand/Gestures/Take_1
+599. animations/Stand/Gestures/Thinking_1
+600. animations/Stand/Gestures/Thinking_2
+601. animations/Stand/Gestures/Thinking_3
+602. animations/Stand/Gestures/Thinking_4
+603. animations/Stand/Gestures/Thinking_5
+604. animations/Stand/Gestures/Thinking_6
+605. animations/Stand/Gestures/Thinking_7
+606. animations/Stand/Gestures/Thinking_8
+607. animations/Stand/Gestures/This_1
+608. animations/Stand/Gestures/This_10
+609. animations/Stand/Gestures/This_11
+610. animations/Stand/Gestures/This_12
+611. animations/Stand/Gestures/This_13
+612. animations/Stand/Gestures/This_14
+613. animations/Stand/Gestures/This_15
+614. animations/Stand/Gestures/This_2
+615. animations/Stand/Gestures/This_3
+616. animations/Stand/Gestures/This_4
+617. animations/Stand/Gestures/This_5
+618. animations/Stand/Gestures/This_6
+619. animations/Stand/Gestures/This_7
+620. animations/Stand/Gestures/This_8
+621. animations/Stand/Gestures/This_9
+622. animations/Stand/Gestures/WhatSThis_1
+623. animations/Stand/Gestures/WhatSThis_10
+624. animations/Stand/Gestures/WhatSThis_11
+625. animations/Stand/Gestures/WhatSThis_12
+626. animations/Stand/Gestures/WhatSThis_13
+627. animations/Stand/Gestures/WhatSThis_14
+628. animations/Stand/Gestures/WhatSThis_15
+629. animations/Stand/Gestures/WhatSThis_16
+630. animations/Stand/Gestures/WhatSThis_2
+631. animations/Stand/Gestures/WhatSThis_3
+632. animations/Stand/Gestures/WhatSThis_4
+633. animations/Stand/Gestures/WhatSThis_5
+634. animations/Stand/Gestures/WhatSThis_6
+635. animations/Stand/Gestures/WhatSThis_7
+636. animations/Stand/Gestures/WhatSThis_8
+637. animations/Stand/Gestures/WhatSThis_9
+638. animations/Stand/Gestures/Wings_1
+639. animations/Stand/Gestures/Wings_2
+640. animations/Stand/Gestures/Wings_3
+641. animations/Stand/Gestures/Wings_4
+642. animations/Stand/Gestures/Wings_5
+643. animations/Stand/Gestures/Yes_1
+644. animations/Stand/Gestures/Yes_2
+645. animations/Stand/Gestures/Yes_3
+646. animations/Stand/Gestures/YouKnowWhat_1
+647. animations/Stand/Gestures/YouKnowWhat_2
+648. animations/Stand/Gestures/YouKnowWhat_3
+649. animations/Stand/Gestures/YouKnowWhat_4
+650. animations/Stand/Gestures/YouKnowWhat_5
+651. animations/Stand/Gestures/YouKnowWhat_6
+652. animations/Stand/Gestures/You_1
+653. animations/Stand/Gestures/You_2
+654. animations/Stand/Gestures/You_3
+655. animations/Stand/Gestures/You_4
+656. animations/Stand/Gestures/You_5
+657. animations/Stand/Gestures/Yum_1
+658. animations/Stand/Negation/NAO/Center_Neutral_NEG_01
+659. animations/Stand/Negation/NAO/Center_Neutral_NEG_02
+660. animations/Stand/Negation/NAO/Center_Neutral_NEG_03
+661. animations/Stand/Negation/NAO/Center_Neutral_NEG_04
+662. animations/Stand/Negation/NAO/Center_Slow_NEG_01
+663. animations/Stand/Negation/NAO/Center_Slow_NEG_02
+664. animations/Stand/Negation/NAO/Center_Strong_NEG_01
+665. animations/Stand/Negation/NAO/Center_Strong_NEG_03
+666. animations/Stand/Negation/NAO/Center_Strong_NEG_04
+667. animations/Stand/Negation/NAO/Center_Strong_NEG_05
+668. animations/Stand/Negation/NAO/Left_Neutral_NEG_01
+669. animations/Stand/Negation/NAO/Left_Strong_NEG_01
+670. animations/Stand/Negation/NAO/Left_Strong_NEG_02
+671. animations/Stand/Negation/NAO/Left_Strong_NEG_03
+672. animations/Stand/Negation/NAO/Left_Strong_NEG_04
+673. animations/Stand/Negation/NAO/Right_Neutral_NEG_01
+674. animations/Stand/Negation/NAO/Right_Strong_NEG_01
+675. animations/Stand/Negation/NAO/Right_Strong_NEG_02
+676. animations/Stand/Negation/NAO/Right_Strong_NEG_03
+677. animations/Stand/Negation/NAO/Right_Strong_NEG_04
+678. animations/Stand/Question/NAO/Center_Neutral_QUE_01
+679. animations/Stand/Question/NAO/Center_Neutral_QUE_02
+680. animations/Stand/Question/NAO/Center_Neutral_QUE_03
+681. animations/Stand/Question/NAO/Center_Neutral_QUE_04
+682. animations/Stand/Question/NAO/Center_Neutral_QUE_05
+683. animations/Stand/Question/NAO/Center_Neutral_QUE_06
+684. animations/Stand/Question/NAO/Center_Neutral_QUE_08
+685. animations/Stand/Question/NAO/Center_Neutral_QUE_09
+686. animations/Stand/Question/NAO/Center_Neutral_QUE_10
+687. animations/Stand/Question/NAO/Center_Slow_QUE_01
+688. animations/Stand/Question/NAO/Center_Slow_QUE_02
+689. animations/Stand/Question/NAO/Center_Slow_QUE_03
+690. animations/Stand/Question/NAO/Center_Strong_QUE_01
+691. animations/Stand/Question/NAO/Center_Strong_QUE_02
+692. animations/Stand/Question/NAO/Center_Strong_QUE_03
+693. animations/Stand/Question/NAO/Left_Neutral_QUE_01
+694. animations/Stand/Question/NAO/Left_Neutral_QUE_02
+695. animations/Stand/Question/NAO/Left_Neutral_QUE_03
+696. animations/Stand/Question/NAO/Right_Neutral_QUE_01
+697. animations/Stand/Question/NAO/Right_Neutral_QUE_02
+698. animations/Stand/Question/NAO/Right_Neutral_QUE_03
+699. animations/Stand/Reactions/BumperLeft_1
+700. animations/Stand/Reactions/BumperRight_1
+701. animations/Stand/Reactions/Bumpers_1
+702. animations/Stand/Reactions/Bumpers_2
+703. animations/Stand/Reactions/Bumpers_3
+704. animations/Stand/Reactions/EthernetOff_1
+705. animations/Stand/Reactions/EthernetOn_1
+706. animations/Stand/Reactions/Heat_1
+707. animations/Stand/Reactions/Heat_2
+708. animations/Stand/Reactions/LightShine_1
+709. animations/Stand/Reactions/LightShine_2
+710. animations/Stand/Reactions/LightShine_3
+711. animations/Stand/Reactions/LightShine_4
+712. animations/Stand/Reactions/SeeColor_1
+713. animations/Stand/Reactions/SeeColor_2
+714. animations/Stand/Reactions/SeeColor_3
+715. animations/Stand/Reactions/SeeSomething_1
+716. animations/Stand/Reactions/SeeSomething_3
+717. animations/Stand/Reactions/SeeSomething_4
+718. animations/Stand/Reactions/SeeSomething_5
+719. animations/Stand/Reactions/SeeSomething_6
+720. animations/Stand/Reactions/SeeSomething_7
+721. animations/Stand/Reactions/SeeSomething_8
+722. animations/Stand/Reactions/ShakeBody_1
+723. animations/Stand/Reactions/ShakeBody_2
+724. animations/Stand/Reactions/ShakeBody_3
+725. animations/Stand/Reactions/TouchHead_1
+726. animations/Stand/Reactions/TouchHead_2
+727. animations/Stand/Reactions/TouchHead_3
+728. animations/Stand/Reactions/TouchHead_4
+729. animations/Stand/Self & others/NAO/Center_Neutral_SAO_01
+730. animations/Stand/Self & others/NAO/Center_Neutral_SAO_02
+731. animations/Stand/Self & others/NAO/Center_Neutral_SAO_03
+732. animations/Stand/Self & others/NAO/Center_Neutral_SAO_04
+733. animations/Stand/Self & others/NAO/Center_Neutral_SAO_05
+734. animations/Stand/Self & others/NAO/Center_Strong_SAO_01
+735. animations/Stand/Self & others/NAO/Center_Strong_SAO_02
+736. animations/Stand/Self & others/NAO/Left_Neutral_SAO_01
+737. animations/Stand/Self & others/NAO/Left_Neutral_SAO_02
+738. animations/Stand/Self & others/NAO/Left_Neutral_SAO_03
+739. animations/Stand/Self & others/NAO/Left_Neutral_SAO_04
+740. animations/Stand/Self & others/NAO/Left_Neutral_SAO_05
+741. animations/Stand/Self & others/NAO/Left_Neutral_SAO_06
+742. animations/Stand/Self & others/NAO/Left_Slow_SAO_01
+743. animations/Stand/Self & others/NAO/Left_Slow_SAO_02
+744. animations/Stand/Self & others/NAO/Left_Strong_SAO_01
+745. animations/Stand/Self & others/NAO/Left_Strong_SAO_02
+746. animations/Stand/Self & others/NAO/Left_Strong_SAO_03
+747. animations/Stand/Self & others/NAO/Left_Strong_SAO_04
+748. animations/Stand/Self & others/NAO/Left_Strong_SAO_05
+749. animations/Stand/Self & others/NAO/Right_Neutral_SAO_01
+750. animations/Stand/Self & others/NAO/Right_Neutral_SAO_02
+751. animations/Stand/Self & others/NAO/Right_Neutral_SAO_03
+752. animations/Stand/Self & others/NAO/Right_Neutral_SAO_04
+753. animations/Stand/Self & others/NAO/Right_Neutral_SAO_05
+754. animations/Stand/Self & others/NAO/Right_Neutral_SAO_06
+755. animations/Stand/Self & others/NAO/Right_Slow_SAO_01
+756. animations/Stand/Self & others/NAO/Right_Slow_SAO_02
+757. animations/Stand/Self & others/NAO/Right_Strong_SAO_01
+758. animations/Stand/Self & others/NAO/Right_Strong_SAO_02
+759. animations/Stand/Self & others/NAO/Right_Strong_SAO_03
+760. animations/Stand/Self & others/NAO/Right_Strong_SAO_04
+761. animations/Stand/Self & others/NAO/Right_Strong_SAO_05
+762. animations/Stand/Space & time/NAO/Center_Neutral_SAT_01
+763. animations/Stand/Space & time/NAO/Center_Neutral_SAT_02
+764. animations/Stand/Space & time/NAO/Center_Neutral_SAT_03
+765. animations/Stand/Space & time/NAO/Center_Neutral_SAT_04
+766. animations/Stand/Space & time/NAO/Center_Slow_SAT_01
+767. animations/Stand/Space & time/NAO/Center_Slow_SAT_02
+768. animations/Stand/Space & time/NAO/Center_Slow_SAT_03
+769. animations/Stand/Space & time/NAO/Center_Strong_SAT_01
+770. animations/Stand/Space & time/NAO/Center_Strong_SAT_02
+771. animations/Stand/Space & time/NAO/Left_Neutral_SAT_01
+772. animations/Stand/Space & time/NAO/Left_Neutral_SAT_02
+773. animations/Stand/Space & time/NAO/Left_Neutral_SAT_03
+774. animations/Stand/Space & time/NAO/Left_Neutral_SAT_04
+775. animations/Stand/Space & time/NAO/Left_Neutral_SAT_05
+776. animations/Stand/Space & time/NAO/Left_Neutral_SAT_06
+777. animations/Stand/Space & time/NAO/Left_Neutral_SAT_07
+778. animations/Stand/Space & time/NAO/Left_Neutral_SAT_08
+779. animations/Stand/Space & time/NAO/Left_Neutral_SAT_09
+780. animations/Stand/Space & time/NAO/Left_Neutral_SAT_10
+781. animations/Stand/Space & time/NAO/Left_Slow_SAT_01
+782. animations/Stand/Space & time/NAO/Left_Strong_SAT_01
+783. animations/Stand/Space & time/NAO/Left_Strong_SAT_02
+784. animations/Stand/Space & time/NAO/Left_Strong_SAT_03
+785. animations/Stand/Space & time/NAO/Left_Strong_SAT_04
+786. animations/Stand/Space & time/NAO/Left_Strong_SAT_05
+787. animations/Stand/Space & time/NAO/Left_Strong_SAT_06
+788. animations/Stand/Space & time/NAO/Right_Neutral_SAT_01
+789. animations/Stand/Space & time/NAO/Right_Neutral_SAT_02
+790. animations/Stand/Space & time/NAO/Right_Neutral_SAT_03
+791. animations/Stand/Space & time/NAO/Right_Neutral_SAT_04
+792. animations/Stand/Space & time/NAO/Right_Neutral_SAT_05
+793. animations/Stand/Space & time/NAO/Right_Neutral_SAT_06
+794. animations/Stand/Space & time/NAO/Right_Neutral_SAT_07
+795. animations/Stand/Space & time/NAO/Right_Neutral_SAT_08
+796. animations/Stand/Space & time/NAO/Right_Neutral_SAT_09
+797. animations/Stand/Space & time/NAO/Right_Neutral_SAT_10
+798. animations/Stand/Space & time/NAO/Right_Slow_SAT_01
+799. animations/Stand/Space & time/NAO/Right_Strong_SAT_01
+800. animations/Stand/Space & time/NAO/Right_Strong_SAT_02
+801. animations/Stand/Space & time/NAO/Right_Strong_SAT_03
+802. animations/Stand/Space & time/NAO/Right_Strong_SAT_04
+803. animations/Stand/Space & time/NAO/Right_Strong_SAT_05
+804. animations/Stand/Space & time/NAO/Right_Strong_SAT_06
+805. animations/Stand/Waiting/AirGuitar_1
+806. animations/Stand/Waiting/AirJuggle_1
+807. animations/Stand/Waiting/BackRubs_1
+808. animations/Stand/Waiting/Bandmaster_1
+809. animations/Stand/Waiting/Binoculars_1
+810. animations/Stand/Waiting/CallSomeone_1
+811. animations/Stand/Waiting/Drink_1
+812. animations/Stand/Waiting/DriveCar_1
+813. animations/Stand/Waiting/Fitness_1
+814. animations/Stand/Waiting/Fitness_2
+815. animations/Stand/Waiting/Fitness_3
+816. animations/Stand/Waiting/FunnyDancer_1
+817. animations/Stand/Waiting/FunnySlide_1
+818. animations/Stand/Waiting/HappyBirthday_1
+819. animations/Stand/Waiting/Headbang_1
+820. animations/Stand/Waiting/Helicopter_1
+821. animations/Stand/Waiting/HideEyes_1
+822. animations/Stand/Waiting/HideHands_1
+823. animations/Stand/Waiting/Innocent_1
+824. animations/Stand/Waiting/Knight_1
+825. animations/Stand/Waiting/KnockEye_1
+826. animations/Stand/Waiting/KungFu_1
+827. animations/Stand/Waiting/LookHand_1
+828. animations/Stand/Waiting/LookHand_2
+829. animations/Stand/Waiting/LoveYou_1
+830. animations/Stand/Waiting/Monster_1
+831. animations/Stand/Waiting/MysticalPower_1
+832. animations/Stand/Waiting/PlayHands_1
+833. animations/Stand/Waiting/PlayHands_2
+834. animations/Stand/Waiting/PlayHands_3
+835. animations/Stand/Waiting/Relaxation_1
+836. animations/Stand/Waiting/Relaxation_2
+837. animations/Stand/Waiting/Relaxation_3
+838. animations/Stand/Waiting/Relaxation_4
+839. animations/Stand/Waiting/Rest_1
+840. animations/Stand/Waiting/Robot_1
+841. animations/Stand/Waiting/ScratchBack_1
+842. animations/Stand/Waiting/ScratchBottom_1
+843. animations/Stand/Waiting/ScratchEye_1
+844. animations/Stand/Waiting/ScratchHand_1
+845. animations/Stand/Waiting/ScratchHead_1
+846. animations/Stand/Waiting/ScratchLeg_1
+847. animations/Stand/Waiting/ScratchTorso_1
+848. animations/Stand/Waiting/ShowMuscles_1
+849. animations/Stand/Waiting/ShowMuscles_2
+850. animations/Stand/Waiting/ShowMuscles_3
+851. animations/Stand/Waiting/ShowMuscles_4
+852. animations/Stand/Waiting/ShowMuscles_5
+853. animations/Stand/Waiting/ShowSky_1
+854. animations/Stand/Waiting/ShowSky_2
+855. animations/Stand/Waiting/SpaceShuttle_1
+856. animations/Stand/Waiting/Stretch_1
+857. animations/Stand/Waiting/Stretch_2
+858. animations/Stand/Waiting/Stretch_3
+859. animations/Stand/Waiting/TakePicture_1
+860. animations/Stand/Waiting/Taxi_1
+861. animations/Stand/Waiting/Think_1
+862. animations/Stand/Waiting/Think_2
+863. animations/Stand/Waiting/Think_3
+864. animations/Stand/Waiting/Think_4
+865. animations/Stand/Waiting/Vacuum_1
+866. animations/Stand/Waiting/Waddle_1
+867. animations/Stand/Waiting/Waddle_2
+868. animations/Stand/Waiting/WakeUp_1
+869. animations/Stand/Waiting/WalkInTheShit_1
+870. animations/Stand/Waiting/Zombie_1
+871. boot-config
+872. boot-config/animations/bipGentle
+873. boot-config/animations/endReco
+874. boot-config/animations/finishWizard
+875. boot-config/animations/hello
+876. boot-config/animations/inviteTablet
+877. boot-config/animations/networkLoop
+878. boot-config/animations/networkOut
+879. boot-config/animations/nok
+880. boot-config/animations/ok
+881. boot-config/animations/onNextPage
+882. boot-config/animations/onPlugged
+883. boot-config/animations/onPrevPage
+884. boot-config/animations/onUnPlugged
+885. boot-config/animations/poseInit
+886. boot-config/animations/poseInitUp
+887. boot-config/animations/shutdown
+888. boot-config/animations/success
+889. boot-config/animations/turnTabletOn_end
+890. boot-config/animations/turnTabletOn_start
+891. boot-config/animations/updateFailed
+892. boot-config/animations/updateLoop
+893. boot-config/animations/updateOut
+894. boot-config/animations/warning
+895. boot-config/animations/warningValidate
+896. run_dialog_dev
+897. run_dialog_dev/init
+898. sleep-reactions/Animations/End_ShakeHead
+899. sleep-reactions/Animations/Start_ShakeHead
+900. sleep-reactions/RandomHand
+901. sleep-reactions/TouchHand
+
+
+============================================================
+ANIMATIONS PAR CATEGORIE
+============================================================
+
+
+[.lastUploadedChoregrapheBehavior] (1 animations)
+  - .lastUploadedChoregrapheBehavior/behavior_1
+
+[Autres] (4 animations)
+  - aldebaran_auto_diagnostic-fe5347
+  - animationMode
+  - boot-config
+  - run_dialog_dev
+
+[animations/LED] (1 animations)
+  - animations/LED/CircleEyes
+
+[animations/Sit/BodyTalk/BodyLanguage] (12 animations)
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_1
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_10
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_11
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_12
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_2
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_3
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_4
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_5
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_6
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_7
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_8
+  - animations/Sit/BodyTalk/BodyLanguage/BodyTalk_9
+
+[animations/Sit/BodyTalk/Listening] (4 animations)
+  - animations/Sit/BodyTalk/Listening/Listening_1
+  - animations/Sit/BodyTalk/Listening/Listening_2
+  - animations/Sit/BodyTalk/Listening/Listening_3
+  - animations/Sit/BodyTalk/Listening/Listening_4
+
+[animations/Sit/BodyTalk/Speaking] (12 animations)
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_1
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_10
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_11
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_12
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_2
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_3
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_4
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_5
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_6
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_7
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_8
+  - animations/Sit/BodyTalk/Speaking/BodyTalk_9
+
+[animations/Sit/BodyTalk/Thinking] (5 animations)
+  - animations/Sit/BodyTalk/Thinking/Remember_1
+  - animations/Sit/BodyTalk/Thinking/Remember_2
+  - animations/Sit/BodyTalk/Thinking/Remember_3
+  - animations/Sit/BodyTalk/Thinking/ThinkingLoop_1
+  - animations/Sit/BodyTalk/Thinking/ThinkingLoop_2
+
+[animations/Sit/Emotions/Negative] (7 animations)
+  - animations/Sit/Emotions/Negative/Angry_1
+  - animations/Sit/Emotions/Negative/Fear_1
+  - animations/Sit/Emotions/Negative/Frustrated_1
+  - animations/Sit/Emotions/Negative/Hurt_1
+  - animations/Sit/Emotions/Negative/Late_1
+  - animations/Sit/Emotions/Negative/Sad_1
+  - animations/Sit/Emotions/Negative/Surprise_1
+
+[animations/Sit/Emotions/Neutral] (4 animations)
+  - animations/Sit/Emotions/Neutral/AskForAttention_1
+  - animations/Sit/Emotions/Neutral/AskForAttention_2
+  - animations/Sit/Emotions/Neutral/AskForAttention_3
+  - animations/Sit/Emotions/Neutral/Sneeze_1
+
+[animations/Sit/Emotions/Positive] (10 animations)
+  - animations/Sit/Emotions/Positive/Happy_1
+  - animations/Sit/Emotions/Positive/Happy_2
+  - animations/Sit/Emotions/Positive/Happy_3
+  - animations/Sit/Emotions/Positive/Happy_4
+  - animations/Sit/Emotions/Positive/Hungry_1
+  - animations/Sit/Emotions/Positive/Laugh_1
+  - animations/Sit/Emotions/Positive/Laugh_2
+  - animations/Sit/Emotions/Positive/Mocker_1
+  - animations/Sit/Emotions/Positive/Shy_1
+  - animations/Sit/Emotions/Positive/Winner_1
+
+[animations/Sit/Gestures] (4 animations)
+  - animations/Sit/Gestures/ComeOn_1
+  - animations/Sit/Gestures/Hey_3
+  - animations/Sit/Gestures/Me_7
+  - animations/Sit/Gestures/You_4
+
+[animations/Sit/Reactions] (22 animations)
+  - animations/Sit/Reactions/BumperLeft_1
+  - animations/Sit/Reactions/BumperRight_1
+  - animations/Sit/Reactions/Bumpers_1
+  - animations/Sit/Reactions/Bumpers_2
+  - animations/Sit/Reactions/Bumpers_3
+  - animations/Sit/Reactions/EthernetOff_1
+  - animations/Sit/Reactions/EthernetOn_1
+  - animations/Sit/Reactions/Heat_1
+  - animations/Sit/Reactions/LightShine_1
+  - animations/Sit/Reactions/LightShine_2
+  - animations/Sit/Reactions/LightShine_3
+  - animations/Sit/Reactions/LightShine_4
+  - animations/Sit/Reactions/SeeColor_1
+  - animations/Sit/Reactions/SeeColor_2
+  - animations/Sit/Reactions/SeeColor_3
+  - animations/Sit/Reactions/ShakeBody_1
+  - animations/Sit/Reactions/ShakeBody_2
+  - animations/Sit/Reactions/ShakeBody_3
+  - animations/Sit/Reactions/TouchHead_1
+  - animations/Sit/Reactions/TouchHead_2
+  - animations/Sit/Reactions/TouchHead_3
+  - animations/Sit/Reactions/TouchHead_4
+
+[animations/Sit/Waiting] (47 animations)
+  - animations/Sit/Waiting/AutoFormat_1
+  - animations/Sit/Waiting/Binoculars_1
+  - animations/Sit/Waiting/Bored_1
+  - animations/Sit/Waiting/CallSomeone_1
+  - animations/Sit/Waiting/CatchFly_1
+  - animations/Sit/Waiting/Cramp_1
+  - animations/Sit/Waiting/DriveCar_1
+  - animations/Sit/Waiting/FalseStop_1
+  - animations/Sit/Waiting/FalseStop_2
+  - animations/Sit/Waiting/Fitness_1
+  - animations/Sit/Waiting/GeoCircle_1
+  - animations/Sit/Waiting/GeoSquare_1
+  - animations/Sit/Waiting/GeoTriangle_1
+  - animations/Sit/Waiting/KnockEye_1
+  - animations/Sit/Waiting/KnockKnee_1
+  - animations/Sit/Waiting/KnockKnee_2
+  - animations/Sit/Waiting/LookHand_1
+  - animations/Sit/Waiting/LookHand_2
+  - animations/Sit/Waiting/Music_HighwayToHell_1
+  - animations/Sit/Waiting/Music_VieEnRose_1
+  - animations/Sit/Waiting/MysticalPower_1
+  - animations/Sit/Waiting/Oar_1
+  - animations/Sit/Waiting/Phone_1
+  - animations/Sit/Waiting/PlayHands_1
+  - animations/Sit/Waiting/PlayHands_2
+  - animations/Sit/Waiting/PlayHands_3
+  - animations/Sit/Waiting/Pong_1
+  - animations/Sit/Waiting/PoorlySeated_1
+  - animations/Sit/Waiting/Puppet_1
+  - animations/Sit/Waiting/Relaxation_1
+  - animations/Sit/Waiting/Relaxation_2
+  - animations/Sit/Waiting/Relaxation_3
+  - animations/Sit/Waiting/Rest_1
+  - animations/Sit/Waiting/Robot_1
+  - animations/Sit/Waiting/ScratchBack_1
+  - animations/Sit/Waiting/ScratchEye_1
+  - animations/Sit/Waiting/ScratchHand_1
+  - animations/Sit/Waiting/ScratchHead_1
+  - animations/Sit/Waiting/ScratchLeg_1
+  - animations/Sit/Waiting/ScratchTorso_1
+  - animations/Sit/Waiting/TakePicture_1
+  - animations/Sit/Waiting/Think_1
+  - animations/Sit/Waiting/Think_2
+  - animations/Sit/Waiting/Think_3
+  - animations/Sit/Waiting/WakeUp_1
+  - animations/Sit/Waiting/Yawn_1
+  - animations/Sit/Waiting/ZenCircles_1
+
+[animations/SitOnPod/BodyTalk/Listening] (8 animations)
+  - animations/SitOnPod/BodyTalk/Listening/Listening_1
+  - animations/SitOnPod/BodyTalk/Listening/Listening_2
+  - animations/SitOnPod/BodyTalk/Listening/Listening_3
+  - animations/SitOnPod/BodyTalk/Listening/Listening_4
+  - animations/SitOnPod/BodyTalk/Listening/Listening_5
+  - animations/SitOnPod/BodyTalk/Listening/Listening_6
+  - animations/SitOnPod/BodyTalk/Listening/Listening_7
+  - animations/SitOnPod/BodyTalk/Listening/Listening_8
+
+[animations/SitOnPod/BodyTalk/Speaking] (12 animations)
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_1
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_10
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_11
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_12
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_2
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_3
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_4
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_5
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_6
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_7
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_8
+  - animations/SitOnPod/BodyTalk/Speaking/BodyTalk_9
+
+[animations/SitOnPod/BodyTalk/Thinking] (5 animations)
+  - animations/SitOnPod/BodyTalk/Thinking/Remember_1
+  - animations/SitOnPod/BodyTalk/Thinking/Remember_2
+  - animations/SitOnPod/BodyTalk/Thinking/Remember_3
+  - animations/SitOnPod/BodyTalk/Thinking/ThinkingLoop_1
+  - animations/SitOnPod/BodyTalk/Thinking/ThinkingLoop_2
+
+[animations/SitOnPod/Emotions/Neutral] (1 animations)
+  - animations/SitOnPod/Emotions/Neutral/Hello_1
+
+[animations/SitOnPod/Gestures] (72 animations)
+  - animations/SitOnPod/Gestures/Choice_1
+  - animations/SitOnPod/Gestures/CountThree_1
+  - animations/SitOnPod/Gestures/CountThree_2
+  - animations/SitOnPod/Gestures/CountTwo_1
+  - animations/SitOnPod/Gestures/CountTwo_2
+  - animations/SitOnPod/Gestures/Everything_1
+  - animations/SitOnPod/Gestures/Everything_2
+  - animations/SitOnPod/Gestures/Everything_3
+  - animations/SitOnPod/Gestures/Everything_4
+  - animations/SitOnPod/Gestures/Everything_6
+  - animations/SitOnPod/Gestures/HeSays_1
+  - animations/SitOnPod/Gestures/HeSays_2
+  - animations/SitOnPod/Gestures/HeSays_3
+  - animations/SitOnPod/Gestures/Hey_1
+  - animations/SitOnPod/Gestures/Hey_2
+  - animations/SitOnPod/Gestures/Hey_3
+  - animations/SitOnPod/Gestures/Hey_4
+  - animations/SitOnPod/Gestures/Hey_6
+  - animations/SitOnPod/Gestures/Hey_7
+  - animations/SitOnPod/Gestures/Me_1
+  - animations/SitOnPod/Gestures/Me_2
+  - animations/SitOnPod/Gestures/Me_4
+  - animations/SitOnPod/Gestures/Me_7
+  - animations/SitOnPod/Gestures/Me_8
+  - animations/SitOnPod/Gestures/No_1
+  - animations/SitOnPod/Gestures/No_2
+  - animations/SitOnPod/Gestures/No_3
+  - animations/SitOnPod/Gestures/No_4
+  - animations/SitOnPod/Gestures/No_5
+  - animations/SitOnPod/Gestures/No_6
+  - animations/SitOnPod/Gestures/No_7
+  - animations/SitOnPod/Gestures/No_8
+  - animations/SitOnPod/Gestures/No_9
+  - animations/SitOnPod/Gestures/This_1
+  - animations/SitOnPod/Gestures/This_10
+  - animations/SitOnPod/Gestures/This_11
+  - animations/SitOnPod/Gestures/This_12
+  - animations/SitOnPod/Gestures/This_13
+  - animations/SitOnPod/Gestures/This_14
+  - animations/SitOnPod/Gestures/This_15
+  - animations/SitOnPod/Gestures/This_2
+  - animations/SitOnPod/Gestures/This_3
+  - animations/SitOnPod/Gestures/This_4
+  - animations/SitOnPod/Gestures/This_5
+  - animations/SitOnPod/Gestures/This_6
+  - animations/SitOnPod/Gestures/This_7
+  - animations/SitOnPod/Gestures/This_8
+  - animations/SitOnPod/Gestures/This_9
+  - animations/SitOnPod/Gestures/WhatSThis_1
+  - animations/SitOnPod/Gestures/WhatSThis_10
+  - animations/SitOnPod/Gestures/WhatSThis_11
+  - animations/SitOnPod/Gestures/WhatSThis_12
+  - animations/SitOnPod/Gestures/WhatSThis_13
+  - animations/SitOnPod/Gestures/WhatSThis_14
+  - animations/SitOnPod/Gestures/WhatSThis_15
+  - animations/SitOnPod/Gestures/WhatSThis_16
+  - animations/SitOnPod/Gestures/WhatSThis_2
+  - animations/SitOnPod/Gestures/WhatSThis_3
+  - animations/SitOnPod/Gestures/WhatSThis_4
+  - animations/SitOnPod/Gestures/WhatSThis_5
+  - animations/SitOnPod/Gestures/WhatSThis_6
+  - animations/SitOnPod/Gestures/WhatSThis_7
+  - animations/SitOnPod/Gestures/WhatSThis_8
+  - animations/SitOnPod/Gestures/WhatSThis_9
+  - animations/SitOnPod/Gestures/Yes_1
+  - animations/SitOnPod/Gestures/Yes_2
+  - animations/SitOnPod/Gestures/Yes_3
+  - animations/SitOnPod/Gestures/You_1
+  - animations/SitOnPod/Gestures/You_2
+  - animations/SitOnPod/Gestures/You_3
+  - animations/SitOnPod/Gestures/You_4
+  - animations/SitOnPod/Gestures/You_5
+
+[animations/Stand/BodyTalk/BodyLanguage/NAO] (40 animations)
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_01
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_04
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_05
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_06
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_07
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_08
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_09
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_10
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_11
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_12
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Neutral_AFF_13
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_01
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_03
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_05
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Slow_AFF_06
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_01
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_04
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_05
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_06
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_07
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Center_Strong_AFF_08
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_04
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_05
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Neutral_AFF_06
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Slow_AFF_01
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Slow_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Slow_AFF_03
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Left_Strong_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_04
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_05
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Neutral_AFF_06
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Slow_AFF_01
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Slow_AFF_02
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Slow_AFF_03
+  - animations/Stand/BodyTalk/BodyLanguage/NAO/Right_Strong_AFF_02
+
+[animations/Stand/BodyTalk/Listening] (5 animations)
+  - animations/Stand/BodyTalk/Listening/ListeningLeft_1
+  - animations/Stand/BodyTalk/Listening/ListeningLeft_3
+  - animations/Stand/BodyTalk/Listening/ListeningRight_1
+  - animations/Stand/BodyTalk/Listening/ListeningRight_3
+  - animations/Stand/BodyTalk/Listening/Listening_2
+
+[animations/Stand/BodyTalk/Speaking] (22 animations)
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_1
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_10
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_11
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_12
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_13
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_14
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_15
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_16
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_17
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_18
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_19
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_2
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_20
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_21
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_22
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_3
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_4
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_5
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_6
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_7
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_8
+  - animations/Stand/BodyTalk/Speaking/BodyTalk_9
+
+[animations/Stand/BodyTalk/Thinking] (5 animations)
+  - animations/Stand/BodyTalk/Thinking/Remember_1
+  - animations/Stand/BodyTalk/Thinking/Remember_2
+  - animations/Stand/BodyTalk/Thinking/Remember_3
+  - animations/Stand/BodyTalk/Thinking/ThinkingLoop_1
+  - animations/Stand/BodyTalk/Thinking/ThinkingLoop_2
+
+[animations/Stand/Emotions/Negative] (25 animations)
+  - animations/Stand/Emotions/Negative/Angry_1
+  - animations/Stand/Emotions/Negative/Angry_2
+  - animations/Stand/Emotions/Negative/Angry_3
+  - animations/Stand/Emotions/Negative/Angry_4
+  - animations/Stand/Emotions/Negative/Anxious_1
+  - animations/Stand/Emotions/Negative/Bored_1
+  - animations/Stand/Emotions/Negative/Bored_2
+  - animations/Stand/Emotions/Negative/Disappointed_1
+  - animations/Stand/Emotions/Negative/Exhausted_1
+  - animations/Stand/Emotions/Negative/Exhausted_2
+  - animations/Stand/Emotions/Negative/Fear_1
+  - animations/Stand/Emotions/Negative/Fear_2
+  - animations/Stand/Emotions/Negative/Fearful_1
+  - animations/Stand/Emotions/Negative/Frustrated_1
+  - animations/Stand/Emotions/Negative/Humiliated_1
+  - animations/Stand/Emotions/Negative/Hurt_1
+  - animations/Stand/Emotions/Negative/Hurt_2
+  - animations/Stand/Emotions/Negative/Late_1
+  - animations/Stand/Emotions/Negative/Sad_1
+  - animations/Stand/Emotions/Negative/Sad_2
+  - animations/Stand/Emotions/Negative/Shocked_1
+  - animations/Stand/Emotions/Negative/Sorry_1
+  - animations/Stand/Emotions/Negative/Surprise_1
+  - animations/Stand/Emotions/Negative/Surprise_2
+  - animations/Stand/Emotions/Negative/Surprise_3
+
+[animations/Stand/Emotions/Neutral] (18 animations)
+  - animations/Stand/Emotions/Neutral/Alienated_1
+  - animations/Stand/Emotions/Neutral/Annoyed_1
+  - animations/Stand/Emotions/Neutral/AskForAttention_1
+  - animations/Stand/Emotions/Neutral/AskForAttention_2
+  - animations/Stand/Emotions/Neutral/AskForAttention_3
+  - animations/Stand/Emotions/Neutral/Cautious_1
+  - animations/Stand/Emotions/Neutral/Confused_1
+  - animations/Stand/Emotions/Neutral/Determined_1
+  - animations/Stand/Emotions/Neutral/Embarrassed_1
+  - animations/Stand/Emotions/Neutral/Hello_1
+  - animations/Stand/Emotions/Neutral/Hesitation_1
+  - animations/Stand/Emotions/Neutral/Innocent_1
+  - animations/Stand/Emotions/Neutral/Lonely_1
+  - animations/Stand/Emotions/Neutral/Mischievous_1
+  - animations/Stand/Emotions/Neutral/Puzzled_1
+  - animations/Stand/Emotions/Neutral/Sneeze
+  - animations/Stand/Emotions/Neutral/Stubborn_1
+  - animations/Stand/Emotions/Neutral/Suspicious_1
+
+[animations/Stand/Emotions/Positive] (30 animations)
+  - animations/Stand/Emotions/Positive/Amused_1
+  - animations/Stand/Emotions/Positive/Confident_1
+  - animations/Stand/Emotions/Positive/Ecstatic_1
+  - animations/Stand/Emotions/Positive/Enthusiastic_1
+  - animations/Stand/Emotions/Positive/Excited_1
+  - animations/Stand/Emotions/Positive/Excited_2
+  - animations/Stand/Emotions/Positive/Excited_3
+  - animations/Stand/Emotions/Positive/Happy_1
+  - animations/Stand/Emotions/Positive/Happy_2
+  - animations/Stand/Emotions/Positive/Happy_3
+  - animations/Stand/Emotions/Positive/Happy_4
+  - animations/Stand/Emotions/Positive/Hungry_1
+  - animations/Stand/Emotions/Positive/Hysterical_1
+  - animations/Stand/Emotions/Positive/Interested_1
+  - animations/Stand/Emotions/Positive/Interested_2
+  - animations/Stand/Emotions/Positive/Laugh_1
+  - animations/Stand/Emotions/Positive/Laugh_2
+  - animations/Stand/Emotions/Positive/Laugh_3
+  - animations/Stand/Emotions/Positive/Mocker_1
+  - animations/Stand/Emotions/Positive/Optimistic_1
+  - animations/Stand/Emotions/Positive/Peaceful_1
+  - animations/Stand/Emotions/Positive/Proud_1
+  - animations/Stand/Emotions/Positive/Proud_2
+  - animations/Stand/Emotions/Positive/Proud_3
+  - animations/Stand/Emotions/Positive/Relieved_1
+  - animations/Stand/Emotions/Positive/Shy_1
+  - animations/Stand/Emotions/Positive/Shy_2
+  - animations/Stand/Emotions/Positive/Sure_1
+  - animations/Stand/Emotions/Positive/Winner_1
+  - animations/Stand/Emotions/Positive/Winner_2
+
+[animations/Stand/Enumeration/NAO] (29 animations)
+  - animations/Stand/Enumeration/NAO/Center_Neutral_ENU_01
+  - animations/Stand/Enumeration/NAO/Center_Neutral_ENU_02
+  - animations/Stand/Enumeration/NAO/Center_Neutral_ENU_03
+  - animations/Stand/Enumeration/NAO/Center_Neutral_ENU_04
+  - animations/Stand/Enumeration/NAO/Center_Neutral_ENU_06
+  - animations/Stand/Enumeration/NAO/Center_Neutral_ENU_07
+  - animations/Stand/Enumeration/NAO/Center_Slow_ENU_01
+  - animations/Stand/Enumeration/NAO/Center_Slow_ENU_02
+  - animations/Stand/Enumeration/NAO/Center_Slow_ENU_03
+  - animations/Stand/Enumeration/NAO/Center_Slow_ENU_04
+  - animations/Stand/Enumeration/NAO/Center_Strong_ENU_01
+  - animations/Stand/Enumeration/NAO/Center_Strong_ENU_02
+  - animations/Stand/Enumeration/NAO/Center_Strong_ENU_03
+  - animations/Stand/Enumeration/NAO/Left_Neutral_ENU_01
+  - animations/Stand/Enumeration/NAO/Left_Neutral_ENU_02
+  - animations/Stand/Enumeration/NAO/Left_Neutral_ENU_03
+  - animations/Stand/Enumeration/NAO/Left_Neutral_ENU_04
+  - animations/Stand/Enumeration/NAO/Left_Neutral_ENU_05
+  - animations/Stand/Enumeration/NAO/Left_Strong_ENU_02
+  - animations/Stand/Enumeration/NAO/Left_Strong_ENU_03
+  - animations/Stand/Enumeration/NAO/Left_Strong_ENU_04
+  - animations/Stand/Enumeration/NAO/Right_Neutral_ENU_01
+  - animations/Stand/Enumeration/NAO/Right_Neutral_ENU_02
+  - animations/Stand/Enumeration/NAO/Right_Neutral_ENU_03
+  - animations/Stand/Enumeration/NAO/Right_Neutral_ENU_04
+  - animations/Stand/Enumeration/NAO/Right_Neutral_ENU_05
+  - animations/Stand/Enumeration/NAO/Right_Strong_ENU_02
+  - animations/Stand/Enumeration/NAO/Right_Strong_ENU_03
+  - animations/Stand/Enumeration/NAO/Right_Strong_ENU_04
+
+[animations/Stand/Exclamation/NAO] (30 animations)
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_01
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_02
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_03
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_04
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_05
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_06
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_07
+  - animations/Stand/Exclamation/NAO/Center_Neutral_EXC_08
+  - animations/Stand/Exclamation/NAO/Center_Slow_EXC_01
+  - animations/Stand/Exclamation/NAO/Center_Slow_EXC_02
+  - animations/Stand/Exclamation/NAO/Center_Slow_EXC_03
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_03
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_04
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_05
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_06
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_08
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_09
+  - animations/Stand/Exclamation/NAO/Center_Strong_EXC_10
+  - animations/Stand/Exclamation/NAO/Left_Neutral_EXC_02
+  - animations/Stand/Exclamation/NAO/Left_Neutral_EXC_05
+  - animations/Stand/Exclamation/NAO/Left_Strong_EXC_01
+  - animations/Stand/Exclamation/NAO/Left_Strong_EXC_02
+  - animations/Stand/Exclamation/NAO/Left_Strong_EXC_03
+  - animations/Stand/Exclamation/NAO/Left_Strong_EXC_04
+  - animations/Stand/Exclamation/NAO/Right_Neutral_EXC_02
+  - animations/Stand/Exclamation/NAO/Right_Neutral_EXC_05
+  - animations/Stand/Exclamation/NAO/Right_Strong_EXC_01
+  - animations/Stand/Exclamation/NAO/Right_Strong_EXC_02
+  - animations/Stand/Exclamation/NAO/Right_Strong_EXC_03
+  - animations/Stand/Exclamation/NAO/Right_Strong_EXC_04
+
+[animations/Stand/Gestures] (224 animations)
+  - animations/Stand/Gestures/Angry_1
+  - animations/Stand/Gestures/Angry_2
+  - animations/Stand/Gestures/Angry_3
+  - animations/Stand/Gestures/Applause_1
+  - animations/Stand/Gestures/BowShort_1
+  - animations/Stand/Gestures/But_1
+  - animations/Stand/Gestures/CalmDown_1
+  - animations/Stand/Gestures/CalmDown_2
+  - animations/Stand/Gestures/CalmDown_3
+  - animations/Stand/Gestures/CalmDown_4
+  - animations/Stand/Gestures/CalmDown_5
+  - animations/Stand/Gestures/CalmDown_6
+  - animations/Stand/Gestures/Caress_1
+  - animations/Stand/Gestures/Caress_2
+  - animations/Stand/Gestures/CatchFly_1
+  - animations/Stand/Gestures/CatchFly_2
+  - animations/Stand/Gestures/Choice_1
+  - animations/Stand/Gestures/Choice_2
+  - animations/Stand/Gestures/Claw_1
+  - animations/Stand/Gestures/Claw_2
+  - animations/Stand/Gestures/Coaxing_1
+  - animations/Stand/Gestures/Coaxing_2
+  - animations/Stand/Gestures/ComeOn_1
+  - animations/Stand/Gestures/Confused_1
+  - animations/Stand/Gestures/Confused_2
+  - animations/Stand/Gestures/CountFive_1
+  - animations/Stand/Gestures/CountFive_2
+  - animations/Stand/Gestures/CountFour_1
+  - animations/Stand/Gestures/CountFour_2
+  - animations/Stand/Gestures/CountMore_1
+  - animations/Stand/Gestures/CountMore_2
+  - animations/Stand/Gestures/CountOne_1
+  - animations/Stand/Gestures/CountOne_2
+  - animations/Stand/Gestures/CountThree_1
+  - animations/Stand/Gestures/CountThree_2
+  - animations/Stand/Gestures/CountTwo_1
+  - animations/Stand/Gestures/CountTwo_2
+  - animations/Stand/Gestures/Desperate_1
+  - animations/Stand/Gestures/Desperate_2
+  - animations/Stand/Gestures/Desperate_3
+  - animations/Stand/Gestures/Desperate_4
+  - animations/Stand/Gestures/Desperate_5
+  - animations/Stand/Gestures/Enthusiastic_1
+  - animations/Stand/Gestures/Enthusiastic_2
+  - animations/Stand/Gestures/Enthusiastic_3
+  - animations/Stand/Gestures/Enthusiastic_4
+  - animations/Stand/Gestures/Enthusiastic_5
+  - animations/Stand/Gestures/Everything_1
+  - animations/Stand/Gestures/Everything_2
+  - animations/Stand/Gestures/Everything_3
+  - animations/Stand/Gestures/Everything_4
+  - animations/Stand/Gestures/Everything_5
+  - animations/Stand/Gestures/Everything_6
+  - animations/Stand/Gestures/Excited_1
+  - animations/Stand/Gestures/Explain_1
+  - animations/Stand/Gestures/Explain_10
+  - animations/Stand/Gestures/Explain_11
+  - animations/Stand/Gestures/Explain_2
+  - animations/Stand/Gestures/Explain_3
+  - animations/Stand/Gestures/Explain_4
+  - animations/Stand/Gestures/Explain_5
+  - animations/Stand/Gestures/Explain_6
+  - animations/Stand/Gestures/Explain_7
+  - animations/Stand/Gestures/Explain_8
+  - animations/Stand/Gestures/Explain_9
+  - animations/Stand/Gestures/Far_1
+  - animations/Stand/Gestures/Far_2
+  - animations/Stand/Gestures/Far_3
+  - animations/Stand/Gestures/Follow_1
+  - animations/Stand/Gestures/Freeze_1
+  - animations/Stand/Gestures/Give_1
+  - animations/Stand/Gestures/Give_2
+  - animations/Stand/Gestures/Give_3
+  - animations/Stand/Gestures/Give_4
+  - animations/Stand/Gestures/Give_5
+  - animations/Stand/Gestures/Give_6
+  - animations/Stand/Gestures/Great_1
+  - animations/Stand/Gestures/HeSays_1
+  - animations/Stand/Gestures/HeSays_2
+  - animations/Stand/Gestures/HeSays_3
+  - animations/Stand/Gestures/Hey_1
+  - animations/Stand/Gestures/Hey_2
+  - animations/Stand/Gestures/Hey_3
+  - animations/Stand/Gestures/Hey_4
+  - animations/Stand/Gestures/Hey_5
+  - animations/Stand/Gestures/Hey_6
+  - animations/Stand/Gestures/Hey_7
+  - animations/Stand/Gestures/Hide_1
+  - animations/Stand/Gestures/Hungry_1
+  - animations/Stand/Gestures/IDontKnow_1
+  - animations/Stand/Gestures/IDontKnow_2
+  - animations/Stand/Gestures/IDontKnow_3
+  - animations/Stand/Gestures/IDontKnow_4
+  - animations/Stand/Gestures/IDontKnow_5
+  - animations/Stand/Gestures/IDontKnow_6
+  - animations/Stand/Gestures/JointHands_1
+  - animations/Stand/Gestures/JointHands_2
+  - animations/Stand/Gestures/JointHands_3
+  - animations/Stand/Gestures/Joy_1
+  - animations/Stand/Gestures/Kisses_1
+  - animations/Stand/Gestures/Look_1
+  - animations/Stand/Gestures/Look_2
+  - animations/Stand/Gestures/Maybe_1
+  - animations/Stand/Gestures/Me_1
+  - animations/Stand/Gestures/Me_2
+  - animations/Stand/Gestures/Me_3
+  - animations/Stand/Gestures/Me_4
+  - animations/Stand/Gestures/Me_5
+  - animations/Stand/Gestures/Me_6
+  - animations/Stand/Gestures/Me_7
+  - animations/Stand/Gestures/Me_8
+  - animations/Stand/Gestures/Mime_1
+  - animations/Stand/Gestures/Mime_2
+  - animations/Stand/Gestures/Next_1
+  - animations/Stand/Gestures/No_1
+  - animations/Stand/Gestures/No_2
+  - animations/Stand/Gestures/No_3
+  - animations/Stand/Gestures/No_4
+  - animations/Stand/Gestures/No_5
+  - animations/Stand/Gestures/No_6
+  - animations/Stand/Gestures/No_7
+  - animations/Stand/Gestures/No_8
+  - animations/Stand/Gestures/No_9
+  - animations/Stand/Gestures/Nothing_1
+  - animations/Stand/Gestures/Nothing_2
+  - animations/Stand/Gestures/OnTheEvening_1
+  - animations/Stand/Gestures/OnTheEvening_2
+  - animations/Stand/Gestures/OnTheEvening_3
+  - animations/Stand/Gestures/OnTheEvening_4
+  - animations/Stand/Gestures/OnTheEvening_5
+  - animations/Stand/Gestures/Please_1
+  - animations/Stand/Gestures/Please_2
+  - animations/Stand/Gestures/Please_3
+  - animations/Stand/Gestures/Reject_1
+  - animations/Stand/Gestures/Reject_2
+  - animations/Stand/Gestures/Reject_3
+  - animations/Stand/Gestures/Reject_4
+  - animations/Stand/Gestures/Reject_5
+  - animations/Stand/Gestures/Reject_6
+  - animations/Stand/Gestures/Salute_1
+  - animations/Stand/Gestures/Salute_2
+  - animations/Stand/Gestures/Salute_3
+  - animations/Stand/Gestures/Shoot_1
+  - animations/Stand/Gestures/ShowFloor_1
+  - animations/Stand/Gestures/ShowFloor_2
+  - animations/Stand/Gestures/ShowFloor_3
+  - animations/Stand/Gestures/ShowFloor_4
+  - animations/Stand/Gestures/ShowFloor_5
+  - animations/Stand/Gestures/ShowSky_1
+  - animations/Stand/Gestures/ShowSky_10
+  - animations/Stand/Gestures/ShowSky_11
+  - animations/Stand/Gestures/ShowSky_12
+  - animations/Stand/Gestures/ShowSky_2
+  - animations/Stand/Gestures/ShowSky_3
+  - animations/Stand/Gestures/ShowSky_4
+  - animations/Stand/Gestures/ShowSky_5
+  - animations/Stand/Gestures/ShowSky_6
+  - animations/Stand/Gestures/ShowSky_7
+  - animations/Stand/Gestures/ShowSky_8
+  - animations/Stand/Gestures/ShowSky_9
+  - animations/Stand/Gestures/Shy_1
+  - animations/Stand/Gestures/Stretch_1
+  - animations/Stand/Gestures/Stretch_2
+  - animations/Stand/Gestures/Surprised_1
+  - animations/Stand/Gestures/Take_1
+  - animations/Stand/Gestures/Thinking_1
+  - animations/Stand/Gestures/Thinking_2
+  - animations/Stand/Gestures/Thinking_3
+  - animations/Stand/Gestures/Thinking_4
+  - animations/Stand/Gestures/Thinking_5
+  - animations/Stand/Gestures/Thinking_6
+  - animations/Stand/Gestures/Thinking_7
+  - animations/Stand/Gestures/Thinking_8
+  - animations/Stand/Gestures/This_1
+  - animations/Stand/Gestures/This_10
+  - animations/Stand/Gestures/This_11
+  - animations/Stand/Gestures/This_12
+  - animations/Stand/Gestures/This_13
+  - animations/Stand/Gestures/This_14
+  - animations/Stand/Gestures/This_15
+  - animations/Stand/Gestures/This_2
+  - animations/Stand/Gestures/This_3
+  - animations/Stand/Gestures/This_4
+  - animations/Stand/Gestures/This_5
+  - animations/Stand/Gestures/This_6
+  - animations/Stand/Gestures/This_7
+  - animations/Stand/Gestures/This_8
+  - animations/Stand/Gestures/This_9
+  - animations/Stand/Gestures/WhatSThis_1
+  - animations/Stand/Gestures/WhatSThis_10
+  - animations/Stand/Gestures/WhatSThis_11
+  - animations/Stand/Gestures/WhatSThis_12
+  - animations/Stand/Gestures/WhatSThis_13
+  - animations/Stand/Gestures/WhatSThis_14
+  - animations/Stand/Gestures/WhatSThis_15
+  - animations/Stand/Gestures/WhatSThis_16
+  - animations/Stand/Gestures/WhatSThis_2
+  - animations/Stand/Gestures/WhatSThis_3
+  - animations/Stand/Gestures/WhatSThis_4
+  - animations/Stand/Gestures/WhatSThis_5
+  - animations/Stand/Gestures/WhatSThis_6
+  - animations/Stand/Gestures/WhatSThis_7
+  - animations/Stand/Gestures/WhatSThis_8
+  - animations/Stand/Gestures/WhatSThis_9
+  - animations/Stand/Gestures/Wings_1
+  - animations/Stand/Gestures/Wings_2
+  - animations/Stand/Gestures/Wings_3
+  - animations/Stand/Gestures/Wings_4
+  - animations/Stand/Gestures/Wings_5
+  - animations/Stand/Gestures/Yes_1
+  - animations/Stand/Gestures/Yes_2
+  - animations/Stand/Gestures/Yes_3
+  - animations/Stand/Gestures/YouKnowWhat_1
+  - animations/Stand/Gestures/YouKnowWhat_2
+  - animations/Stand/Gestures/YouKnowWhat_3
+  - animations/Stand/Gestures/YouKnowWhat_4
+  - animations/Stand/Gestures/YouKnowWhat_5
+  - animations/Stand/Gestures/YouKnowWhat_6
+  - animations/Stand/Gestures/You_1
+  - animations/Stand/Gestures/You_2
+  - animations/Stand/Gestures/You_3
+  - animations/Stand/Gestures/You_4
+  - animations/Stand/Gestures/You_5
+  - animations/Stand/Gestures/Yum_1
+
+[animations/Stand/Negation/NAO] (20 animations)
+  - animations/Stand/Negation/NAO/Center_Neutral_NEG_01
+  - animations/Stand/Negation/NAO/Center_Neutral_NEG_02
+  - animations/Stand/Negation/NAO/Center_Neutral_NEG_03
+  - animations/Stand/Negation/NAO/Center_Neutral_NEG_04
+  - animations/Stand/Negation/NAO/Center_Slow_NEG_01
+  - animations/Stand/Negation/NAO/Center_Slow_NEG_02
+  - animations/Stand/Negation/NAO/Center_Strong_NEG_01
+  - animations/Stand/Negation/NAO/Center_Strong_NEG_03
+  - animations/Stand/Negation/NAO/Center_Strong_NEG_04
+  - animations/Stand/Negation/NAO/Center_Strong_NEG_05
+  - animations/Stand/Negation/NAO/Left_Neutral_NEG_01
+  - animations/Stand/Negation/NAO/Left_Strong_NEG_01
+  - animations/Stand/Negation/NAO/Left_Strong_NEG_02
+  - animations/Stand/Negation/NAO/Left_Strong_NEG_03
+  - animations/Stand/Negation/NAO/Left_Strong_NEG_04
+  - animations/Stand/Negation/NAO/Right_Neutral_NEG_01
+  - animations/Stand/Negation/NAO/Right_Strong_NEG_01
+  - animations/Stand/Negation/NAO/Right_Strong_NEG_02
+  - animations/Stand/Negation/NAO/Right_Strong_NEG_03
+  - animations/Stand/Negation/NAO/Right_Strong_NEG_04
+
+[animations/Stand/Question/NAO] (21 animations)
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_01
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_02
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_03
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_04
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_05
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_06
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_08
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_09
+  - animations/Stand/Question/NAO/Center_Neutral_QUE_10
+  - animations/Stand/Question/NAO/Center_Slow_QUE_01
+  - animations/Stand/Question/NAO/Center_Slow_QUE_02
+  - animations/Stand/Question/NAO/Center_Slow_QUE_03
+  - animations/Stand/Question/NAO/Center_Strong_QUE_01
+  - animations/Stand/Question/NAO/Center_Strong_QUE_02
+  - animations/Stand/Question/NAO/Center_Strong_QUE_03
+  - animations/Stand/Question/NAO/Left_Neutral_QUE_01
+  - animations/Stand/Question/NAO/Left_Neutral_QUE_02
+  - animations/Stand/Question/NAO/Left_Neutral_QUE_03
+  - animations/Stand/Question/NAO/Right_Neutral_QUE_01
+  - animations/Stand/Question/NAO/Right_Neutral_QUE_02
+  - animations/Stand/Question/NAO/Right_Neutral_QUE_03
+
+[animations/Stand/Reactions] (30 animations)
+  - animations/Stand/Reactions/BumperLeft_1
+  - animations/Stand/Reactions/BumperRight_1
+  - animations/Stand/Reactions/Bumpers_1
+  - animations/Stand/Reactions/Bumpers_2
+  - animations/Stand/Reactions/Bumpers_3
+  - animations/Stand/Reactions/EthernetOff_1
+  - animations/Stand/Reactions/EthernetOn_1
+  - animations/Stand/Reactions/Heat_1
+  - animations/Stand/Reactions/Heat_2
+  - animations/Stand/Reactions/LightShine_1
+  - animations/Stand/Reactions/LightShine_2
+  - animations/Stand/Reactions/LightShine_3
+  - animations/Stand/Reactions/LightShine_4
+  - animations/Stand/Reactions/SeeColor_1
+  - animations/Stand/Reactions/SeeColor_2
+  - animations/Stand/Reactions/SeeColor_3
+  - animations/Stand/Reactions/SeeSomething_1
+  - animations/Stand/Reactions/SeeSomething_3
+  - animations/Stand/Reactions/SeeSomething_4
+  - animations/Stand/Reactions/SeeSomething_5
+  - animations/Stand/Reactions/SeeSomething_6
+  - animations/Stand/Reactions/SeeSomething_7
+  - animations/Stand/Reactions/SeeSomething_8
+  - animations/Stand/Reactions/ShakeBody_1
+  - animations/Stand/Reactions/ShakeBody_2
+  - animations/Stand/Reactions/ShakeBody_3
+  - animations/Stand/Reactions/TouchHead_1
+  - animations/Stand/Reactions/TouchHead_2
+  - animations/Stand/Reactions/TouchHead_3
+  - animations/Stand/Reactions/TouchHead_4
+
+[animations/Stand/Self & others/NAO] (33 animations)
+  - animations/Stand/Self & others/NAO/Center_Neutral_SAO_01
+  - animations/Stand/Self & others/NAO/Center_Neutral_SAO_02
+  - animations/Stand/Self & others/NAO/Center_Neutral_SAO_03
+  - animations/Stand/Self & others/NAO/Center_Neutral_SAO_04
+  - animations/Stand/Self & others/NAO/Center_Neutral_SAO_05
+  - animations/Stand/Self & others/NAO/Center_Strong_SAO_01
+  - animations/Stand/Self & others/NAO/Center_Strong_SAO_02
+  - animations/Stand/Self & others/NAO/Left_Neutral_SAO_01
+  - animations/Stand/Self & others/NAO/Left_Neutral_SAO_02
+  - animations/Stand/Self & others/NAO/Left_Neutral_SAO_03
+  - animations/Stand/Self & others/NAO/Left_Neutral_SAO_04
+  - animations/Stand/Self & others/NAO/Left_Neutral_SAO_05
+  - animations/Stand/Self & others/NAO/Left_Neutral_SAO_06
+  - animations/Stand/Self & others/NAO/Left_Slow_SAO_01
+  - animations/Stand/Self & others/NAO/Left_Slow_SAO_02
+  - animations/Stand/Self & others/NAO/Left_Strong_SAO_01
+  - animations/Stand/Self & others/NAO/Left_Strong_SAO_02
+  - animations/Stand/Self & others/NAO/Left_Strong_SAO_03
+  - animations/Stand/Self & others/NAO/Left_Strong_SAO_04
+  - animations/Stand/Self & others/NAO/Left_Strong_SAO_05
+  - animations/Stand/Self & others/NAO/Right_Neutral_SAO_01
+  - animations/Stand/Self & others/NAO/Right_Neutral_SAO_02
+  - animations/Stand/Self & others/NAO/Right_Neutral_SAO_03
+  - animations/Stand/Self & others/NAO/Right_Neutral_SAO_04
+  - animations/Stand/Self & others/NAO/Right_Neutral_SAO_05
+  - animations/Stand/Self & others/NAO/Right_Neutral_SAO_06
+  - animations/Stand/Self & others/NAO/Right_Slow_SAO_01
+  - animations/Stand/Self & others/NAO/Right_Slow_SAO_02
+  - animations/Stand/Self & others/NAO/Right_Strong_SAO_01
+  - animations/Stand/Self & others/NAO/Right_Strong_SAO_02
+  - animations/Stand/Self & others/NAO/Right_Strong_SAO_03
+  - animations/Stand/Self & others/NAO/Right_Strong_SAO_04
+  - animations/Stand/Self & others/NAO/Right_Strong_SAO_05
+
+[animations/Stand/Space & time/NAO] (43 animations)
+  - animations/Stand/Space & time/NAO/Center_Neutral_SAT_01
+  - animations/Stand/Space & time/NAO/Center_Neutral_SAT_02
+  - animations/Stand/Space & time/NAO/Center_Neutral_SAT_03
+  - animations/Stand/Space & time/NAO/Center_Neutral_SAT_04
+  - animations/Stand/Space & time/NAO/Center_Slow_SAT_01
+  - animations/Stand/Space & time/NAO/Center_Slow_SAT_02
+  - animations/Stand/Space & time/NAO/Center_Slow_SAT_03
+  - animations/Stand/Space & time/NAO/Center_Strong_SAT_01
+  - animations/Stand/Space & time/NAO/Center_Strong_SAT_02
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_01
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_02
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_03
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_04
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_05
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_06
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_07
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_08
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_09
+  - animations/Stand/Space & time/NAO/Left_Neutral_SAT_10
+  - animations/Stand/Space & time/NAO/Left_Slow_SAT_01
+  - animations/Stand/Space & time/NAO/Left_Strong_SAT_01
+  - animations/Stand/Space & time/NAO/Left_Strong_SAT_02
+  - animations/Stand/Space & time/NAO/Left_Strong_SAT_03
+  - animations/Stand/Space & time/NAO/Left_Strong_SAT_04
+  - animations/Stand/Space & time/NAO/Left_Strong_SAT_05
+  - animations/Stand/Space & time/NAO/Left_Strong_SAT_06
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_01
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_02
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_03
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_04
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_05
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_06
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_07
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_08
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_09
+  - animations/Stand/Space & time/NAO/Right_Neutral_SAT_10
+  - animations/Stand/Space & time/NAO/Right_Slow_SAT_01
+  - animations/Stand/Space & time/NAO/Right_Strong_SAT_01
+  - animations/Stand/Space & time/NAO/Right_Strong_SAT_02
+  - animations/Stand/Space & time/NAO/Right_Strong_SAT_03
+  - animations/Stand/Space & time/NAO/Right_Strong_SAT_04
+  - animations/Stand/Space & time/NAO/Right_Strong_SAT_05
+  - animations/Stand/Space & time/NAO/Right_Strong_SAT_06
+
+[animations/Stand/Waiting] (66 animations)
+  - animations/Stand/Waiting/AirGuitar_1
+  - animations/Stand/Waiting/AirJuggle_1
+  - animations/Stand/Waiting/BackRubs_1
+  - animations/Stand/Waiting/Bandmaster_1
+  - animations/Stand/Waiting/Binoculars_1
+  - animations/Stand/Waiting/CallSomeone_1
+  - animations/Stand/Waiting/Drink_1
+  - animations/Stand/Waiting/DriveCar_1
+  - animations/Stand/Waiting/Fitness_1
+  - animations/Stand/Waiting/Fitness_2
+  - animations/Stand/Waiting/Fitness_3
+  - animations/Stand/Waiting/FunnyDancer_1
+  - animations/Stand/Waiting/FunnySlide_1
+  - animations/Stand/Waiting/HappyBirthday_1
+  - animations/Stand/Waiting/Headbang_1
+  - animations/Stand/Waiting/Helicopter_1
+  - animations/Stand/Waiting/HideEyes_1
+  - animations/Stand/Waiting/HideHands_1
+  - animations/Stand/Waiting/Innocent_1
+  - animations/Stand/Waiting/Knight_1
+  - animations/Stand/Waiting/KnockEye_1
+  - animations/Stand/Waiting/KungFu_1
+  - animations/Stand/Waiting/LookHand_1
+  - animations/Stand/Waiting/LookHand_2
+  - animations/Stand/Waiting/LoveYou_1
+  - animations/Stand/Waiting/Monster_1
+  - animations/Stand/Waiting/MysticalPower_1
+  - animations/Stand/Waiting/PlayHands_1
+  - animations/Stand/Waiting/PlayHands_2
+  - animations/Stand/Waiting/PlayHands_3
+  - animations/Stand/Waiting/Relaxation_1
+  - animations/Stand/Waiting/Relaxation_2
+  - animations/Stand/Waiting/Relaxation_3
+  - animations/Stand/Waiting/Relaxation_4
+  - animations/Stand/Waiting/Rest_1
+  - animations/Stand/Waiting/Robot_1
+  - animations/Stand/Waiting/ScratchBack_1
+  - animations/Stand/Waiting/ScratchBottom_1
+  - animations/Stand/Waiting/ScratchEye_1
+  - animations/Stand/Waiting/ScratchHand_1
+  - animations/Stand/Waiting/ScratchHead_1
+  - animations/Stand/Waiting/ScratchLeg_1
+  - animations/Stand/Waiting/ScratchTorso_1
+  - animations/Stand/Waiting/ShowMuscles_1
+  - animations/Stand/Waiting/ShowMuscles_2
+  - animations/Stand/Waiting/ShowMuscles_3
+  - animations/Stand/Waiting/ShowMuscles_4
+  - animations/Stand/Waiting/ShowMuscles_5
+  - animations/Stand/Waiting/ShowSky_1
+  - animations/Stand/Waiting/ShowSky_2
+  - animations/Stand/Waiting/SpaceShuttle_1
+  - animations/Stand/Waiting/Stretch_1
+  - animations/Stand/Waiting/Stretch_2
+  - animations/Stand/Waiting/Stretch_3
+  - animations/Stand/Waiting/TakePicture_1
+  - animations/Stand/Waiting/Taxi_1
+  - animations/Stand/Waiting/Think_1
+  - animations/Stand/Waiting/Think_2
+  - animations/Stand/Waiting/Think_3
+  - animations/Stand/Waiting/Think_4
+  - animations/Stand/Waiting/Vacuum_1
+  - animations/Stand/Waiting/Waddle_1
+  - animations/Stand/Waiting/Waddle_2
+  - animations/Stand/Waiting/WakeUp_1
+  - animations/Stand/Waiting/WalkInTheShit_1
+  - animations/Stand/Waiting/Zombie_1
+
+[boot-config/animations] (24 animations)
+  - boot-config/animations/bipGentle
+  - boot-config/animations/endReco
+  - boot-config/animations/finishWizard
+  - boot-config/animations/hello
+  - boot-config/animations/inviteTablet
+  - boot-config/animations/networkLoop
+  - boot-config/animations/networkOut
+  - boot-config/animations/nok
+  - boot-config/animations/ok
+  - boot-config/animations/onNextPage
+  - boot-config/animations/onPlugged
+  - boot-config/animations/onPrevPage
+  - boot-config/animations/onUnPlugged
+  - boot-config/animations/poseInit
+  - boot-config/animations/poseInitUp
+  - boot-config/animations/shutdown
+  - boot-config/animations/success
+  - boot-config/animations/turnTabletOn_end
+  - boot-config/animations/turnTabletOn_start
+  - boot-config/animations/updateFailed
+  - boot-config/animations/updateLoop
+  - boot-config/animations/updateOut
+  - boot-config/animations/warning
+  - boot-config/animations/warningValidate
+
+[run_dialog_dev] (1 animations)
+  - run_dialog_dev/init
+
+[sleep-reactions] (2 animations)
+  - sleep-reactions/RandomHand
+  - sleep-reactions/TouchHand
+
+[sleep-reactions/Animations] (2 animations)
+  - sleep-reactions/Animations/End_ShakeHead
+  - sleep-reactions/Animations/Start_ShakeHead
+
+
+============================================================
+STATISTIQUES
+============================================================
+Total comportements : 901
+Total categories : 38
+
+Repartition par categorie :
+  - .lastUploadedChoregrapheBehavior : 1 animations
+  - Autres : 4 animations
+  - animations/LED : 1 animations
+  - animations/Sit/BodyTalk/BodyLanguage : 12 animations
+  - animations/Sit/BodyTalk/Listening : 4 animations
+  - animations/Sit/BodyTalk/Speaking : 12 animations
+  - animations/Sit/BodyTalk/Thinking : 5 animations
+  - animations/Sit/Emotions/Negative : 7 animations
+  - animations/Sit/Emotions/Neutral : 4 animations
+  - animations/Sit/Emotions/Positive : 10 animations
+  - animations/Sit/Gestures : 4 animations
+  - animations/Sit/Reactions : 22 animations
+  - animations/Sit/Waiting : 47 animations
+  - animations/SitOnPod/BodyTalk/Listening : 8 animations
+  - animations/SitOnPod/BodyTalk/Speaking : 12 animations
+  - animations/SitOnPod/BodyTalk/Thinking : 5 animations
+  - animations/SitOnPod/Emotions/Neutral : 1 animations
+  - animations/SitOnPod/Gestures : 72 animations
+  - animations/Stand/BodyTalk/BodyLanguage/NAO : 40 animations
+  - animations/Stand/BodyTalk/Listening : 5 animations
+  - animations/Stand/BodyTalk/Speaking : 22 animations
+  - animations/Stand/BodyTalk/Thinking : 5 animations
+  - animations/Stand/Emotions/Negative : 25 animations
+  - animations/Stand/Emotions/Neutral : 18 animations
+  - animations/Stand/Emotions/Positive : 30 animations
+  - animations/Stand/Enumeration/NAO : 29 animations
+  - animations/Stand/Exclamation/NAO : 30 animations
+  - animations/Stand/Gestures : 224 animations
+  - animations/Stand/Negation/NAO : 20 animations
+  - animations/Stand/Question/NAO : 21 animations
+  - animations/Stand/Reactions : 30 animations
+  - animations/Stand/Self & others/NAO : 33 animations
+  - animations/Stand/Space & time/NAO : 43 animations
+  - animations/Stand/Waiting : 66 animations
+  - boot-config/animations : 24 animations
+  - run_dialog_dev : 1 animations
+  - sleep-reactions : 2 animations
+  - sleep-reactions/Animations : 2 animations

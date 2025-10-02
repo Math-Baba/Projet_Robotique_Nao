@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import pygame
 import sys
+import threading
 from time import sleep
 from naoqi import ALProxy
 
@@ -11,6 +12,8 @@ PORT = 9559
 motion = ALProxy("ALMotion", NAO_IP, PORT)
 posture = ALProxy("ALRobotPosture", NAO_IP, PORT)
 animation_player = ALProxy("ALAnimationPlayer", NAO_IP, PORT)
+tts = ALProxy("ALTextToSpeech", NAO_IP, PORT)
+tts.setLanguage("French")
 
 posture.goToPosture("StandInit", 0.5)
 
@@ -26,6 +29,9 @@ joystick = pygame.joystick.Joystick(0)
 joystick.init()
 print("Manette détectée :", joystick.get_name())
 
+def speak(text):
+    tts.say(text)
+
 # ---------- BOUCLE PRINCIPALE ----------
 try:
     while True:
@@ -37,23 +43,25 @@ try:
 
         # Déplacements proportionnels au joystick
         if abs(axe_x) > 0.1 or abs(axe_y) > 0.1:
+            tts.post.say("Salut JP ! Attends je viens vers toi")
             motion.moveTo(-axe_y*0.2, 0, -axe_x*0.5)
 
         # Lecture boutons
-        btn_triangle = joystick.get_button(3)  # Triangle
-        btn_square   = joystick.get_button(0)  # Carré
-        btn_cross    = joystick.get_button(1)  # X
-        btn_circle   = joystick.get_button(2)  # Rond
+        btn_square = joystick.get_button(3)  # Carré
+        btn_cross   = joystick.get_button(0)  # X
+        btn_circle    = joystick.get_button(1)  # Rond
+        btn_triangle   = joystick.get_button(2)  # Triangle
 
         # Animations avec les boutons triangle, carré, rond et X
         if btn_triangle:
-            animation_player.run("animations/Stand/Gestures/Hey_1")
+            tts.post.say("Salut c'est Nao !")
+            animation_player.post.run("animations/Stand/Gestures/Explain_10")
         elif btn_square:
-            animation_player.run("animations/Stand/Gestures/Hey_1")
+            animation_player.run("animations/Stand/Waiting/Helicopter_1")
         elif btn_cross:
-            animation_player.run("animations/Stand/Gestures/Hey_1")
+            animation_player.run("animations/Stand/Waiting/DriveCar_1")
         elif btn_circle:
-            animation_player.run("animations/Stand/Gestures/Hey_1")
+            animation_player.run("animations/Stand/Waiting/HappyBirthday_1")
 
         sleep(0.1)
 

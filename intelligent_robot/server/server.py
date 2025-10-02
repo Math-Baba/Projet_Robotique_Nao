@@ -29,11 +29,12 @@ def start_server():
                     response = ai_response(message)
                     if response is None:
                         response = "Ok"
-
+                    
+                    response = response.strip()
                     print("Message envoyé : ", response)
 
                     # Envoyer la réponse encodée
-                    conn.sendall((response + "\n").encode("utf-8"))
+                    conn.sendall(response.encode("utf-8"))
 
             except Exception as e:
                 print("Erreur pendant la connexion :", e)

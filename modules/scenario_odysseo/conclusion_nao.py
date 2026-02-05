@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import time
 import qi
-from load_env import load_env
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+from config.nao_config import ROBOT_IP, PORT
+from config.settings import apply_settings
+from utils.speech_and_animation_player import say_with_animation
 
-env = load_env()
-
-robot_ip = env.get("NAO_IP")
-port = env.get("NAO_PORT")
-
-if not robot_ip:
+if not ROBOT_IP:
     print("IP du robot non définie")
     exit()
 
@@ -19,27 +16,35 @@ if not robot_ip:
 session=qi.Session()
 
 try :
-    session.connect("tcp://{}:{}".format(robot_ip, port))
+    session.connect("tcp://{}:{}".format(ROBOT_IP, PORT))
     print("Connexion réussie")
 except RuntimeError:
     print("Impossible de se connecter au robot")
+
+apply_settings(session)
 
 tts = session.service("ALTextToSpeech")
 motion = session.service("ALMotion")
 posture = session.service("ALRobotPosture")
 animation_player = session.service("ALAnimationPlayer")
-tts.setLanguage("French")
 
 # Mettre le robot en posture initiale
 posture.goToPosture("StandInit", 0.5) 
 
-tts.post.say("""Les enfants, vous avez vu ? Les mangroves, les herbiers et les coraux sont des trésors vivants ! 
-Si on les protège, on protège aussi notre planète. 
-Alors, qui veut devenir un gardien de l’océan ? Souvenez-vous qu’un petit geste de votre part pourra aider l’environnement.
-A très bientôt.""")
-animation_player.post.run("animations/Sit/Emotions/Positive/Happy_1")
+say_with_animation(tts, 
+                   animation_player, 
+                   """Les enfants, vous avez vu ? Les mangroves, les herbiers et les coraux sont des trésors vivants ! Si on les protège, on protège aussi notre planète.""",
+                    "animations/Stand/Gestures/Explain_2")
 
-time.sleep(0.5)
+time.sleep(1)
 
-tts.post.say("Au revoir les amis !")
-animation_player.post.run("animations/Sit/Gestures/Hey_3")
+say_with_animation(tts,
+                   animation_player,
+                   """Alors, qui veut devenir un gardien de l’océan ? Souvenez-vous qu’un petit geste de votre part pourra aider l’environnement.""",
+                   "animations/Stand/Emotions/Positive/Excited_2"
+                   )
+
+time.sleep(1)
+
+tts.say("Au revoir les amis !")
+animation_player.run("animations/Stand/Gestures/Hey_3")

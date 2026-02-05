@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 import time
 import qi
-from load_env import load_env
+from config.nao_config import ROBOT_IP, PORT
+from config.settings import apply_settings
+from utils.speech_and_animation_player import say_with_animation
 
-env = load_env()
 
-robot_ip = env.get("NAO_IP")
-port = int(env.get("NAO_PORT"))
-
-if not robot_ip:
+if not ROBOT_IP:
     print("IP du robot non définie")
     exit()
 
@@ -19,10 +17,12 @@ if not robot_ip:
 session=qi.Session()
 
 try :
-    session.connect("tcp://{}:{}".format(robot_ip, port))
+    session.connect("tcp://{}:{}".format(ROBOT_IP, PORT))
     print("Connexion réussie")
 except RuntimeError:
     print("Impossible de se connecter au robot")
+
+apply_settings(session)
 
 tts = session.service("ALTextToSpeech")
 motion = session.service("ALMotion")
@@ -49,8 +49,7 @@ tts.say("Avant que mes amis commencent la présentation, nous allons chanter et 
 # Paramètres de mouvements : x=avance, y=latéral, theta=rotation (en radians)
 motion.moveTo(0.0, 0.0, 1.57)  # 1.57 rad ≈ 90° vers la gauche
 
-tts.post.say("S'il te plaît, est ce que je peux danser et chanter avec les enfants ?")
-animation_player.post.run("animations/Stand/Gestures/Explain_10")
+say_with_animation(tts, animation_player, "S'il te plaît, est ce que je peux danser et chanter avec les enfants ?", "animations/Stand/Gestures/Explain_10")
 
 motion.moveTo(0.0, 0.0, -1.57)  # -1.57 rad ≈ 90° droite
 

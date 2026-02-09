@@ -47,3 +47,11 @@ def launch_scenario():
                 print(result.stderr)
         except Exception as e:
             print("[ERROR] Impossible d'exécuter le script :", e)
+
+def launch_nao_game():
+    """
+    Menu pour choisir le script de jeu à exécuter :
+    - Nao Game
+    - Ajouter une question/réponse
+    - Générer les QR codes
+    """

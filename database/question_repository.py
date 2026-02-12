@@ -4,13 +4,13 @@ from database.connection import get_db_connection
 class QuestionRepository:
 
     @staticmethod
-    def get_random_question():
+    def get_all_questions():
         conn = get_db_connection()
         cur = conn.cursor()
         cur.execute(
-            "SELECT id, question, answer FROM questions_list ORDER BY RANDOM() LIMIT 1"
+            "SELECT id, question, answer FROM questions_list"
         )
-        row = cur.fetchone()
+        row = cur.fetchall()
         cur.close()
         conn.close()
         return row

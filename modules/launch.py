@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import subprocess
 import os
-from config.python_paths import PYTHON2_PATH
+from config.python_paths import PYTHON2_PATH, PYTHON3_PATH
 
 def launch_scenario():
     """
@@ -55,3 +55,40 @@ def launch_nao_game():
     - Ajouter une question/réponse
     - Générer les QR codes
     """
+    base_path = os.path.join("modules", "nao_game")
+    while True:
+        print("\n=== Nao Game ===")
+        print("1 - Charger de nouvelles questions")
+        print("2 - Lancer le jeu")
+        print("0 - Retour au menu principal")
+
+        choix = input("Votre choix : ").strip()
+        
+        if choix == "1":
+            script = os.path.join(base_path, "load_data.py")
+            python_exec = PYTHON3_PATH
+        elif choix == "2":
+            script = os.path.join(base_path, "nao_game.py")
+            python_exec = PYTHON2_PATH 
+        elif choix == "0":
+            break
+        else:
+            print("Choix invalide, réessayez.")
+            continue
+        
+        print("[INFO] Lancement du script :", os.path.basename(script))
+        
+        try:
+            result = subprocess.run(
+                [python_exec, script],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
+            print("=== Sortie du script ===")
+            print(result.stdout)
+            if result.stderr:
+                print("=== Erreurs éventuelles ===")
+                print(result.stderr)
+        except Exception as e:
+            print("[ERROR] Impossible d'exécuter le script :", e)

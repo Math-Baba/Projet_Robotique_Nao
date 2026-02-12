@@ -9,7 +9,7 @@ def launch_scenario():
     - introduction
     - conclusion
     """
-    # Dossier des scripts Python2.7
+    # Dossier des scripts python
     base_path = os.path.join("modules", "scenario_odysseo")
     
     while True:
@@ -32,7 +32,6 @@ def launch_scenario():
         
         print("[INFO] Lancement du script :", os.path.basename(script))
         
-        # Lancer le script Python2.7
         try:
             result = subprocess.run(
                 [PYTHON2_PATH, script],
@@ -81,6 +80,45 @@ def launch_nao_game():
         try:
             result = subprocess.run(
                 [python_exec, script],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
+            print("=== Sortie du script ===")
+            print(result.stdout)
+            if result.stderr:
+                print("=== Erreurs éventuelles ===")
+                print(result.stderr)
+        except Exception as e:
+            print("[ERROR] Impossible d'exécuter le script :", e)
+
+
+def launch_motion_control():
+    """
+    Menu pour le script de contrôle manuel du robot
+    à partir d'une manette PS3
+    """
+    base_path = os.path.join("modules", "motion_control")
+    while True:
+        print("\n=== Robot Motion Control ===")
+        print("1 - Lancer le script")
+        print("0 - Retour au menu principal")
+
+        choix = input("Votre choix : ").strip()
+        
+        if choix == "1":
+            script = os.path.join(base_path, "robot_motion_controller.py")
+        elif choix == "0":
+            break
+        else:
+            print("Choix invalide, réessayez.")
+            continue
+        
+        print("[INFO] Lancement du script :", os.path.basename(script))
+        
+        try:
+            result = subprocess.run(
+                [PYTHON2_PATH, script],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True

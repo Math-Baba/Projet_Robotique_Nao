@@ -36,7 +36,7 @@ def scan_qr_code(video_service):
 
             # Affichage optionnel pour debug
             cv2.imshow("NAO QR Camera", image)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == 27:  # ESC pour quitter
                 break
     finally:
         video_service.unsubscribe(name_id)

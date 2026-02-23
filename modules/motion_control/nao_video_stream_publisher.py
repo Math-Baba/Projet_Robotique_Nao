@@ -12,11 +12,10 @@ import threading
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from config.nao_config import ROBOT_IP, PORT
+from config.pc_config import PC_IP, PC_PORT
 from utils.nao_movement import pickup_bottle
 
 # ----------------------- CONFIG -----------------------
-PC_IP = "11.0.0.59"
-PC_PORT = 5000
 
 session = qi.Session()
 session.connect("tcp://{}:{}".format(ROBOT_IP, PORT))

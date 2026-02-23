@@ -10,10 +10,10 @@ import time
 from ultralytics import YOLO
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
-# ================= CONFIG =================
+# ----------------------- CONFIG --------------------
 HOST = "0.0.0.0"
 PORT = 5000
-# ==========================================
+# ---------------------------------------------------
 
 # Charger modèle YOLO
 model = YOLO("models/yolov8n.pt")
@@ -32,7 +32,7 @@ bottle_present = False  # pour éviter spam print
 frame_queue = queue.Queue(maxsize=1)
 detections_lock = threading.Lock()
 detections = []
-# persist previous boxes for a few frames to avoid flicker
+# 
 prev_boxes = []
 prev_age = 0
 MAX_PERSIST_FRAMES = 6
@@ -47,7 +47,7 @@ def inference_worker():
         except queue.Empty:
             continue
 
-        # Run YOLO inference (potentially slow) in background
+        # Exécuter l'inférence YOLO (potentiellement lente) en arrière-plan
         results = model(frame, conf=0.5, verbose=False)
 
         boxes = []
@@ -61,11 +61,11 @@ def inference_worker():
                     boxes.append((x1, y1, x2, y2))
 
         with detections_lock:
-            # mutate in-place so main thread reference remains valid
+            # modifier sur place pour que la référence côté thread principal reste valide
             detections[:] = boxes
 
 
-# Start inference thread
+# Démarrer le thread d'inférence
 worker_thread = threading.Thread(target=inference_worker)
 worker_thread.daemon = True
 worker_thread.start()
@@ -99,14 +99,14 @@ try:
         img_data = data_buffer[:msg_size]
         data_buffer = data_buffer[msg_size:]
 
-        # ⚠️ IMPORTANT : vider le buffer restant
+        # IMPORTANT : vider le buffer restant
         data_buffer = b''
 
         # Décoder image
         nparr = np.frombuffer(img_data, np.uint8)
         frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
-        # Enqueue frame for background inference (keep only latest)
+        # Mettre la frame dans la file pour inférence en arrière-plan (conserver uniquement la plus récente)
         try:
             if frame_queue.full():
                 try:
@@ -117,11 +117,11 @@ try:
         except queue.Full:
             pass
 
-        # Draw detections produced by worker thread
+        # Dessiner les détections produites par le thread d'inférence
         with detections_lock:
             boxes_copy = list(detections)
 
-        # If no detection this frame, reuse previous boxes for a short time to avoid flicker
+        # Si pas de détection sur cette frame, réutiliser les boxes précédentes pendant un court instant pour éviter le scintillement
         if boxes_copy:
             prev_boxes = boxes_copy
             prev_age = 0
@@ -140,7 +140,7 @@ try:
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
             cv2.putText(frame, "Bottle", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
-        # Print une seule fois quand bouteille apparaît
+        # Afficher une seule fois quand la bouteille apparaît
         if bottle_detected and not bottle_present:
             print("Bouteille détectée")
             bottle_present = True
@@ -148,7 +148,7 @@ try:
         if not bottle_detected:
             bottle_present = False
 
-        # ========================================
+        # -------------------------------------------
 
         cv2.imshow("NAO YOLO Bottle Detection", frame)
 
@@ -156,7 +156,7 @@ try:
             break
 
 finally:
-    # stop worker thread cleanly
+    # arrêter proprement le thread d'inférence
     running = False
     try:
         worker_thread.join(timeout=1.0)

@@ -14,6 +14,7 @@ from detection.yolo_detection import YOLODetector
 from recognition.facenet_recognizer import FaceRecognizer
 from database.faces_repository import FacesRepository
 from unknown_faces import UnknownFaceManager
+from hand_gesture_detection import create_hand_detector, open_hand, mp
 
 # ================= CONFIG =================
 HOST = "0.0.0.0"
@@ -39,6 +40,12 @@ TRACK_MAX_DIST = 80
 RELOAD_DB_EVERY_N_FRAMES = 90
 
 
+def send_text_message(conn, text):
+    """Envoie un message texte (UTF-8) au NAO avec en-tête de taille 4 octets."""
+    data = text.encode("utf-8")
+    conn.sendall(struct.pack(">L", len(data)) + data)
+
+
 def main():
 
     print("[INFO] Initialisation...")
@@ -49,6 +56,13 @@ def main():
 
     persons_db = FacesRepository.get_all_persons()
     print(f"[INFO] {len(persons_db)} personnes chargees")
+
+    # Initialisation du détecteur de main (MediaPipe)
+    hand_detector = create_hand_detector()
+
+    # État pour la détection de main (MediaPipe déjà configuré dans hand_gesture_detection)
+    frame_timestamp_ms = 0
+    hand_event_active = False  # éviter plusieurs déclenchements successifs
 
     # Structures pour le traitement asynchrone (détection/reconnaissance)
     frame_queue = queue.Queue(maxsize=1)
@@ -176,17 +190,41 @@ def main():
             data_buffer = data_buffer[msg_size:]
             data_buffer = b''
 
+            # -------- Gestion éventuelle d'un message texte REGISTER:prenom --------
+            is_text_msg = False
+            try:
+                text_msg = img_data.decode("utf-8")
+                is_text_msg = True
+            except UnicodeDecodeError:
+                is_text_msg = False
+
+            if is_text_msg and text_msg.startswith("REGISTER:"):
+                prenom = text_msg.split(":", 1)[1].strip()
+                print(f"[INFO] Message REGISTER reçu pour: {prenom}")
+
+                unregistered = unknown_manager.get_unregistered_faces()
+                if unregistered:
+                    last_id = sorted(unregistered.keys(), reverse=True)[0]
+                    emb = unregistered[last_id]["embedding"]
+                    FacesRepository.insert_person(prenom, emb)
+                    unknown_manager.register_unknown_face(last_id, prenom)
+                    print(f"[INFO] Nouveau visage enregistré en base pour {prenom}")
+                else:
+                    print("[WARN] Aucun visage inconnu disponible pour REGISTER")
+
+                continue
+
             # -------- Decode image --------
             nparr = np.frombuffer(img_data, np.uint8)
             frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+            if frame is None:
+                continue
 
             frame_count += 1
 
             # Envoi de la frame au thread de traitement (sans bloquer le flux)
             if ENABLE_RECOGNITION:
                 try:
-                    # On ne garde que la dernière frame : si la queue est pleine,
-                    # on remplace le contenu pour éviter la latence.
                     if frame_queue.full():
                         _ = frame_queue.get_nowait()
                     frame_queue.put_nowait(frame.copy())
@@ -194,6 +232,50 @@ def main():
                     pass
                 except queue.Full:
                     pass
+
+            # -------- Détection de main ouverte (MediaPipe) --------
+            rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb_frame)
+            result = hand_detector.detect_for_video(mp_image, frame_timestamp_ms)
+            frame_timestamp_ms += 33  # ~30 FPS
+
+            open_hand_detected = False
+            if result.hand_landmarks:
+                for hand_landmarks in result.hand_landmarks:
+                    if open_hand(hand_landmarks):
+                        open_hand_detected = True
+                        break
+
+            # Si main ouverte détectée et pas déjà traitée -> reconnaissance ponctuelle
+            if open_hand_detected and not hand_event_active and ENABLE_RECOGNITION:
+                hand_event_active = True
+
+                faces_for_gesture = detector.detect_faces(frame, conf=0.6)
+                if faces_for_gesture:
+                    x1, y1, x2, y2 = faces_for_gesture[0]
+                    face_crop = frame[y1:y2, x1:x2]
+                    emb = recognizer.get_embedding(face_crop) if face_crop.size != 0 else None
+
+                    if emb is not None:
+                        name, distance = recognizer.find_best_match(
+                            emb, persons_db,
+                            threshold=MATCH_THRESHOLD,
+                            confidence_margin=CONFIDENCE_MARGIN
+                        )
+                        if name:
+                            print(f"[INFO] Visage reconnu (geste main): {name}")
+                            send_text_message(conn, f"KNOWN:{name}")
+                        else:
+                            print("[INFO] Visage inconnu (geste main), sauvegarde...")
+                            _ = unknown_manager.add_unknown_face(emb, frame=face_crop)
+                            send_text_message(conn, "UNKNOWN")
+                    else:
+                        print("[WARN] Impossible d'extraire un embedding lors du geste main.")
+                else:
+                    print("[INFO] Aucune face détectée lors du geste main.")
+
+            if not open_hand_detected:
+                hand_event_active = False
 
             # Récupération des dernières détections pour affichage
             if ENABLE_RECOGNITION:

@@ -17,6 +17,7 @@ session = qi.Session()
 session.connect("tcp://{}:{}".format(ROBOT_IP, PORT))
 
 video = session.service("ALVideoDevice")
+tts = session.service("ALTextToSpeech")
 
 # ------------------ CAMERA ------------------
 name_id = video.subscribeCamera(
@@ -30,6 +31,32 @@ name_id = video.subscribeCamera(
 # ------------------ SOCKET ------------------
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+sock.settimeout(0.05)  # petit timeout pour lecture non bloquante
+
+
+def recv_text_message():
+    """Lit un message texte depuis le PC (format 4 octets taille + UTF-8)."""
+    try:
+        header = sock.recv(4)
+        if not header or len(header) < 4:
+            return None
+        size = struct.unpack(">L", header)[0]
+
+        data = b""
+        while len(data) < size:
+            chunk = sock.recv(size - len(data))
+            if not chunk:
+                break
+            data += chunk
+
+        if not data:
+            return None
+        return data.decode("utf-8")
+    except socket.timeout:
+        return None
+    except Exception:
+        return None
+
 
 # Attente serveur PC
 while True:
@@ -43,7 +70,26 @@ while True:
 
 try:
     while True:
+        # 1) Vérifier si le PC a envoyé une réponse KNOWN/UNKNOWN
+        msg = recv_text_message()
+        if msg:
+            if msg.startswith("KNOWN:"):
+                prenom = msg.split(":", 1)[1]
+                print("[INFO] Reçu KNOWN pour {}".format(prenom))
+                tts.say(u"Salut {}".format(prenom))
+                # On ne capture pas d'image pendant le dialogue, puis on reprend
+                continue
+            elif msg == "UNKNOWN":
+                print("[INFO] Reçu UNKNOWN")
+                tts.say(u"Oh je crois pas te connaitre, donne moi ton prenom")
+                prenom = raw_input("Entre ton prenom: ").strip()
+                if prenom:
+                    data = ("REGISTER:" + prenom).encode("utf-8")
+                    sock.sendall(struct.pack(">L", len(data)) + data)
+                # Puis on reprend la capture
+                continue
 
+        # 2) Capture et envoi d'image (flux normal)
         nao_image = video.getImageRemote(name_id)
         if nao_image is None:
             continue
@@ -52,11 +98,9 @@ try:
         height = nao_image[1]
         array = nao_image[6]
 
-        # Reconstruction image
         frame = np.frombuffer(array, dtype=np.uint8).reshape((height, width, 3))
         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
-        # Compression JPEG
         ret, jpeg = cv2.imencode(
             '.jpg',
             frame,
@@ -68,10 +112,9 @@ try:
 
         data = jpeg.tobytes()
 
-        # Envoi taille + image
         try:
             sock.sendall(struct.pack(">L", len(data)) + data)
-        except (BrokenPipeError, ConnectionResetError):
+        except Exception:
             print("[ERROR] PC déconnecté")
             break
 

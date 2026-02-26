@@ -5,90 +5,72 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
 from recognition.facenet_recognizer import FaceRecognizer
 from database.faces_repository import FacesRepository
 from unknown_faces import UnknownFaceManager
 
-PROJECT_ROOT = Path(__file__).parent.parent
-
+# 👉 Import ton système MediaPipe ici
+from hand_gesture_detector import main_ouverte_detectee  
 
 def main():
-    print("Face Registration System")
+    print("Gesture-Based Face Greeting System")
     print("-" * 40)
-    
+
     recognizer = FaceRecognizer()
     unknown_manager = UnknownFaceManager()
-    
-    # Récupération des visages inconnus non encore enregistrés
-    unregistered = unknown_manager.get_unregistered_faces()
-    
-    if not unregistered:
-        print("No unregistered faces found.")
-        return
-    
-    print(f"Found {len(unregistered)} unregistered faces")
-    print()
 
-    # On ne s'intéresse qu'au DERNIER visage inconnu (le plus récent)
-    # Les IDs sont du type "unknown_YYYYMMDD_HHMMSS", donc tri lexicographique = tri temporel.
-    face_ids = sorted(unregistered.keys(), reverse=True)[:1]
-    index = 0
-    
-    while index < len(face_ids):
-        face_id = face_ids[index]
-        face_data = unregistered[face_id]
-        
-        # Chargement de l’image du visage inconnu
-        frame_path = unknown_manager.base_dir / f"{face_id}.jpg"
-        
-        if frame_path.exists():
-            frame = cv2.imread(str(frame_path))
-            cv2.imshow("Unknown Face", frame)
-        
-        print(f"\nFace {index + 1}/{len(face_ids)} (dernier UNKNOWN): {face_id}")
-        print("Options:")
-        print("  1. Register with a name")
-        print("  2. Skip")
-        print("  3. Delete")
-        print("  4. Exit")
-        
-        choice = input("Choice (1-4): ").strip()
-        
-        if choice == "1":
-            name = input("Enter person's full name: ").strip()
-            
-            if name:
-                embedding = face_data['embedding']
-                
-                # ✅ Insertion via repository
-                FacesRepository.insert_person(name, embedding)
-                
-                # Marquer comme enregistré
-                unknown_manager.register_unknown_face(face_id, name)
-                
-                print(f"✓ {name} registered successfully!")
-                index += 1
-            else:
-                print("Name cannot be empty.")
-        
-        elif choice == "2":
-            print("Skipped.")
-            index += 1
-        
-        elif choice == "3":
-            unknown_manager.delete_unknown_face(face_id)
-            face_ids.remove(face_id)
-            print("Deleted.")
-        
-        elif choice == "4":
+    cap = cv2.VideoCapture(0)
+
+    salutation_faite = False
+
+    while True:
+        ret, frame = cap.read()
+        if not ret:
             break
-        
-        else:
-            print("Invalid choice.")
-    
-    cv2.destroyAllWindows()
-    print("\nRegistration complete!")
 
+        # 👋 Détection main ouverte (ta logique Mediapipe)
+        gesture_detected = main_ouverte_detectee(frame)
+
+        if gesture_detected and not salutation_faite:
+            print("👋 Main détectée, reconnaissance faciale...")
+
+            result = recognizer.recognize(frame)
+
+            if result["recognized"]:
+                name = result["name"]
+                print(f"🤖 Salut {name}")
+                # tts.say(f"Salut {name}")  # si NAO
+
+            else:
+                print("🤖 Oh je crois pas te connaitre, donne moi ton prénom : ")
+                name = input().strip()
+
+                if name:
+                    embedding = result["embedding"]
+
+                    # ✅ Insertion BDD
+                    FacesRepository.insert_person(name, embedding)
+
+                    # ✅ Sauvegarde unknown face
+                    unknown_manager.register_unknown_face(result["face_id"], name)
+
+                    print(f"✓ {name} enregistré avec succès !")
+
+            salutation_faite = True
+
+        # Reset si plus de main
+        if not gesture_detected:
+            salutation_faite = False
+
+        cv2.imshow("Camera", frame)
+
+        if cv2.waitKey(1) & 0xFF == 27:
+            break
+
+    cap.release()
+    cv2.destroyAllWindows()
+    print("Arrêt du système")
 
 if __name__ == "__main__":
     main()

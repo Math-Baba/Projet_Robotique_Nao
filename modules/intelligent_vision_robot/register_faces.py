@@ -9,9 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from recognition.facenet_recognizer import FaceRecognizer
 from database.faces_repository import FacesRepository
 from unknown_faces import UnknownFaceManager
-
-# 👉 Import ton système MediaPipe ici
-from hand_gesture_detector import main_ouverte_detectee  
+from hand_gesture_detection import open_hand 
 
 def main():
     print("Gesture-Based Face Greeting System")
@@ -29,8 +27,8 @@ def main():
         if not ret:
             break
 
-        # 👋 Détection main ouverte (ta logique Mediapipe)
-        gesture_detected = main_ouverte_detectee(frame)
+        # Détection main ouverte 
+        gesture_detected = open_hand(frame)
 
         if gesture_detected and not salutation_faite:
             print("👋 Main détectée, reconnaissance faciale...")
@@ -39,11 +37,11 @@ def main():
 
             if result["recognized"]:
                 name = result["name"]
-                print(f"🤖 Salut {name}")
+                print(f"Salut {name}")
                 # tts.say(f"Salut {name}")  # si NAO
 
             else:
-                print("🤖 Oh je crois pas te connaitre, donne moi ton prénom : ")
+                print("Oh je crois pas te connaitre, donne moi ton prénom : ")
                 name = input().strip()
 
                 if name:

@@ -66,13 +66,13 @@ try:
                    "animations/Stand/Emotions/Positive/Excited_2"
                    )
         elif btn_square:
-            tts.say("salut")
+            tts.say("Go hélicopter")
             animation_player.run("animations/Stand/Waiting/Helicopter_1")
         elif btn_cross:
-            tts.say("au revoir")
+            tts.say("En voiture les amis !")
             animation_player.run("animations/Stand/Waiting/DriveCar_1")
         elif btn_circle:
-            tts.say("d'accord")
+            tts.say("1, 2, 3")
             animation_player.run("animations/Stand/Waiting/HappyBirthday_1")
         elif btn_start:
             print("Bouton Start pressé, arrêt du script")

@@ -25,7 +25,7 @@ tts = session.service("ALTextToSpeech")
 video_service = session.service("ALVideoDevice")
 
 questions_list = []
-with open("questions.json", "r") as f:
+with open("modules/nao_game/questions.json", "r") as f:
     raw = json.load(f)
     for item in raw:
         questions_list.append({

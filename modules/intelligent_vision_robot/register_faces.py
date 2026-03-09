@@ -31,7 +31,7 @@ def main():
         gesture_detected = open_hand(frame)
 
         if gesture_detected and not salutation_faite:
-            print("👋 Main détectée, reconnaissance faciale...")
+            print("Main détectée, reconnaissance faciale...")
 
             result = recognizer.recognize(frame)
 

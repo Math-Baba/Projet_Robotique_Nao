@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import subprocess
 import os
-from config.python_paths import PYTHON2_PATH, PYTHON3_PATH
+from config.python_paths import PYTHON2_PATH, PYTHON3_PATH, PYTHON310_PATH
 
 def launch_scenario():
     """
@@ -57,41 +57,52 @@ def launch_nao_game():
     base_path = os.path.join("modules", "nao_game")
     while True:
         print("\n=== Nao Game ===")
-        print("1 - Charger de nouvelles questions")
-        print("2 - Lancer le jeu")
+        print("1 - Charger de nouvelles questions et lancer le jeu")
         print("0 - Retour au menu principal")
 
         choix = input("Votre choix : ").strip()
-        
+
         if choix == "1":
-            script = os.path.join(base_path, "load_data.py")
-            python_exec = PYTHON3_PATH
-        elif choix == "2":
-            script = os.path.join(base_path, "nao_game.py")
-            python_exec = PYTHON2_PATH 
+            print("[INFO] Lancement de load_data.py")
+            try:
+                result = subprocess.run(
+                    [PYTHON3_PATH, "load_data.py"],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True
+                )
+                print(result.stdout)
+                if result.stderr:
+                    print("=== Erreurs éventuelles ===")
+                    print(result.stderr)
+
+                if result.returncode != 0:
+                    print("[ERROR] load_data.py a échoué, arrêt du lancement du jeu.")
+                    continue  # ne pas lancer le jeu si erreur
+
+            except Exception as e:
+                print("[ERROR] Impossible d'exécuter load_data.py :", e)
+                continue
+
+            print("[INFO] Lancement de nao_game.py")
+            try:
+                result = subprocess.run(
+                    [PYTHON2_PATH,  "nao_game.py"],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True
+                )
+                print(result.stdout)
+                if result.stderr:
+                    print("=== Erreurs éventuelles ===")
+                    print(result.stderr)
+            except Exception as e:
+                print("[ERROR] Impossible d'exécuter nao_game.py :", e)
+
         elif choix == "0":
             break
         else:
             print("Choix invalide, réessayez.")
-            continue
-        
-        print("[INFO] Lancement du script :", os.path.basename(script))
-        
-        try:
-            result = subprocess.run(
-                [python_exec, script],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=True
-            )
-            print("=== Sortie du script ===")
-            print(result.stdout)
-            if result.stderr:
-                print("=== Erreurs éventuelles ===")
-                print(result.stderr)
-        except Exception as e:
-            print("[ERROR] Impossible d'exécuter le script :", e)
-
 
 def launch_motion_control():
     """

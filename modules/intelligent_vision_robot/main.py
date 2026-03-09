@@ -8,6 +8,7 @@ from pathlib import Path
 import threading
 import queue
 import time
+from flask import Flask, jsonify
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from detection.yolo_detection import YOLODetector
@@ -18,13 +19,13 @@ from hand_gesture_detection import create_hand_detector, open_hand, mp
 
 # ================= CONFIG =================
 HOST = "0.0.0.0"
-PORT = 5000
+PORT = 5002
 ACCEPT_TIMEOUT = 15.0
 RECV_TIMEOUT = 10.0
 
 ENABLE_RECOGNITION = True
-PROCESS_EVERY_N_FRAMES = 5      # Réduit : on traite plus souvent
-DISPLAY_EVERY_N_FRAMES = 1      # Affiche toutes les frames (pas de freeze visuel)
+PROCESS_EVERY_N_FRAMES = 5
+DISPLAY_EVERY_N_FRAMES = 1
 # ==========================================
 
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -33,6 +34,23 @@ MODEL_PATH = PROJECT_ROOT / "models" / "yolov8-face.pt"
 MATCH_THRESHOLD = 0.4
 CONFIDENCE_MARGIN = 0
 RELOAD_DB_EVERY_N_FRAMES = 150
+
+# Dernière reconnaissance — partagée entre threads
+last_known_name = {"name": None, "timestamp": 0}
+
+# ================= FLASK API =================
+flask_app = Flask(__name__)
+
+@flask_app.route("/last_face", methods=["GET"])
+def last_face():
+    elapsed = time.time() - last_known_name["timestamp"]
+    if last_known_name["name"] and elapsed < 60.0:
+        return jsonify({"name": last_known_name["name"]})
+    return jsonify({"name": None})
+
+def run_flask():
+    flask_app.run(host="0.0.0.0", port=5001, use_reloader=False)
+# =============================================
 
 
 def send_text_message(conn, text):
@@ -53,15 +71,10 @@ def main():
     frame_timestamp_ms = 0
     hand_event_active = False
 
-    # --- Thread de reconnaissance ---
-    # On utilise une queue de taille 2 pour absorber les pics
     frame_queue = queue.Queue(maxsize=2)
     boxes_lock = threading.Lock()
     boxes_and_labels = []
     stop_event = threading.Event()
-
-    # File pour envoyer des messages au thread principal (KNOWN/UNKNOWN)
-    msg_out_queue = queue.Queue()
 
     def processing_loop():
         nonlocal persons_db
@@ -75,12 +88,10 @@ def main():
 
             local_frame_idx += 1
 
-            # Reload DB périodiquement
             if local_frame_idx % RELOAD_DB_EVERY_N_FRAMES == 0:
                 persons_db = FacesRepository.get_all_persons()
                 print(f"[INFO] DB rechargée ({len(persons_db)} personnes)")
 
-            # Traitement reconnaissance
             faces = detector.detect_faces(frame_to_process, conf=0.6)
             new_boxes = []
 
@@ -112,8 +123,11 @@ def main():
             with boxes_lock:
                 boxes_and_labels[:] = new_boxes
 
+    # Lance Flask en arrière-plan
+    threading.Thread(target=run_flask, daemon=True).start()
+    print("[INFO] API reconnaissance disponible sur port 5001")
 
-    # --- Socket ---
+    # --- Socket NAO ---
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     server_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
@@ -134,7 +148,6 @@ def main():
     if ENABLE_RECOGNITION:
         threading.Thread(target=processing_loop, daemon=True).start()
 
-
     data_buffer = b''
     frame_count = 0
 
@@ -143,7 +156,7 @@ def main():
     try:
         while not stop_event.is_set():
 
-            # --- Lecture header (4 octets) ---
+            # --- Lecture header ---
             while len(data_buffer) < 4 and not stop_event.is_set():
                 try:
                     packet = conn.recv(4096)
@@ -151,7 +164,6 @@ def main():
                         raise ConnectionError("NAO déconnecté")
                     data_buffer += packet
                 except socket.timeout:
-                    # Timeout court = normal, on reboucle
                     continue
 
             if len(data_buffer) < 4:
@@ -160,7 +172,6 @@ def main():
             msg_size = struct.unpack(">L", data_buffer[:4])[0]
             data_buffer = data_buffer[4:]
 
-            # Sanity check taille (évite d'attendre un paquet corrompu)
             if msg_size == 0 or msg_size > 5_000_000:
                 print(f"[WARN] Taille suspecte reçue: {msg_size}, flush buffer")
                 data_buffer = b''
@@ -210,17 +221,16 @@ def main():
 
             frame_count += 1
 
-            # --- Envoi au thread de reconnaissance (1 frame sur N) ---
+            # --- Envoi au thread de reconnaissance ---
             if ENABLE_RECOGNITION and frame_count % PROCESS_EVERY_N_FRAMES == 0:
                 try:
-                    # Remplace l'ancienne frame si la queue est pleine
                     if frame_queue.full():
                         frame_queue.get_nowait()
                     frame_queue.put_nowait(frame.copy())
                 except (queue.Empty, queue.Full):
                     pass
 
-            # --- Détection main (thread principal, léger) ---
+            # --- Détection main ---
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb_frame)
             result = hand_detector.detect_for_video(mp_image, frame_timestamp_ms)
@@ -247,9 +257,12 @@ def main():
                         )
                         if name:
                             print(f"[INFO] Reconnu: {name} ({distance:.2f})")
+                            last_known_name["name"] = name        # ← mise à jour API
+                            last_known_name["timestamp"] = time.time()
                             send_text_message(conn, f"KNOWN:{name}")
                         else:
                             print("[INFO] Inconnu, sauvegarde embedding")
+                            last_known_name["name"] = None        # ← reset
                             unknown_manager.add_unknown_face(emb, frame=face_crop)
                             send_text_message(conn, "UNKNOWN")
                     else:
@@ -260,7 +273,7 @@ def main():
             if not open_hand_detected:
                 hand_event_active = False
 
-            # --- Affichage (thread principal obligatoire pour cv2) ---
+            # --- Affichage ---
             with boxes_lock:
                 current_boxes = list(boxes_and_labels)
 

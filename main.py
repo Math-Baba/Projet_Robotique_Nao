@@ -2,7 +2,7 @@
 
 from config.ip_manager import save_ip, load_ip
 from core.nao_connection import test_connection
-from modules.launch import launch_scenario, launch_nao_game, launch_motion_control
+from modules.launch import launch_scenario, launch_nao_game, launch_motion_control, launch_intelligent_vision_robot
 
 def main():
     ip = input("Entrez l'adresse IP du robot NAO : ")
@@ -29,7 +29,7 @@ def main():
         elif choix == "2":
             launch_motion_control()
         elif choix == "3":
-            print("Arrive bientôt...")
+            launch_intelligent_vision_robot()
         elif choix == "4":
             launch_nao_game()
         elif choix == "0":

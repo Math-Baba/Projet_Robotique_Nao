@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import subprocess
 import os
+import time
+import requests
 from config.python_paths import PYTHON2_PATH, PYTHON3_PATH, PYTHON310_PATH
 
 def launch_scenario():
@@ -185,3 +187,191 @@ def launch_motion_control():
                 print(result.stderr)
         except Exception as e:
             print("[ERROR] Impossible d'exécuter le script :", e)
+
+def launch_intelligent_vision_robot():
+    """
+    Menu pour le système de chatbot intelligent avec reconnaissance faciale.
+    Lance les 3 composants nécessaires :
+    - Serveur LLM (Python 3.10, port 5000)
+    - Serveur reconnaissance faciale (Python 3.10, ports 5001 + 5002)
+    - Flux vidéo NAO (Python 2.7, se connecte sur 5002)
+    - Chatbot NAO (Python 2.7, appelle 5000 et 5001)
+    """
+    base_path = os.path.join("modules", "intelligent_vision_robot")
+
+    llm_server   = os.path.join(base_path, "nao_speech_interaction", "llm_server.py")
+    face_server  = os.path.join(base_path, "main.py")
+    video_stream = os.path.join(base_path, "nao_video_stream_publisher.py")
+    chatbot      = os.path.join(base_path, "nao_speech_interaction", "nao_chatbot.py")
+
+    processes = []
+
+    while True:
+        print("\n=== Intelligent Vision Robot ===")
+        print("1 - Lancer le système complet (LLM + Vision + Chatbot)")
+        print("2 - Lancer uniquement le chatbot (serveurs déjà actifs)")
+        print("3 - Lancer uniquement la reconnaissance faciale")
+        print("0 - Retour au menu principal")
+
+        choix = input("Votre choix : ").strip()
+
+        if choix == "1":
+            print("\n[INFO] Démarrage des serveurs...\n")
+
+            # 1. Serveur LLM
+            print("[INFO] Lancement du serveur LLM (port 5000)...")
+            try:
+                proc_llm = subprocess.Popen(
+                    [PYTHON3_PATH, llm_server],
+                )
+                processes.append(("LLM Server", proc_llm))
+                print("[INFO] Serveur LLM lancé (PID {})".format(proc_llm.pid))
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le serveur LLM :", e)
+                continue
+
+            # 2. Serveur reconnaissance faciale 
+            print("[INFO] Lancement du serveur reconnaissance faciale (ports 5001+5002)...")
+            try:
+                proc_face = subprocess.Popen(
+                    [PYTHON310_PATH, face_server],
+                )
+                processes.append(("Face Server", proc_face))
+                print("[INFO] Serveur vision lancé (PID {})".format(proc_face.pid))
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le serveur vision :", e)
+                continue
+
+            # Vérification active que les serveurs sont up
+            print("[INFO] Vérification des serveurs en cours...")
+            llm_ok = False
+            face_ok = False
+
+            for attempt in range(15):
+                time.sleep(1)
+                try:
+                    if not llm_ok:
+                        requests.get("http://127.0.0.1:5000/history", timeout=1)
+                        llm_ok = True
+                        print("[INFO] ✓ Serveur LLM prêt")
+                except Exception:
+                    pass
+                try:
+                    if not face_ok:
+                        requests.get("http://127.0.0.1:5001/last_face", timeout=1)
+                        face_ok = True
+                        print("[INFO] ✓ Serveur vision prêt")
+                except Exception:
+                    pass
+                if llm_ok and face_ok:
+                    break
+                print("[INFO] Attente... ({}/15)".format(attempt + 1))
+
+            if not llm_ok:
+                print("[ERROR] Serveur LLM non accessible après 15s, abandon.")
+                for name, proc in processes:
+                    proc.terminate()
+                processes.clear()
+                continue
+
+            if not face_ok:
+                print("[WARN] Serveur vision non accessible, on continue sans reconnaissance.")
+
+            # 3. Flux vidéo NAO 
+            print("[INFO] Lancement du flux vidéo NAO...")
+            try:
+                proc_video = subprocess.Popen(
+                    [PYTHON2_PATH, video_stream],
+                )
+                processes.append(("Video Stream", proc_video))
+                print("[INFO] Flux vidéo lancé (PID {})".format(proc_video.pid))
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le flux vidéo :", e)
+                continue
+
+            # 4. Chatbot NAO 
+            print("[INFO] Lancement du chatbot NAO...")
+            print("[INFO] (ECHAP dans le chatbot pour arrêter tout le système)\n")
+            try:
+                subprocess.run([PYTHON2_PATH, chatbot])
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le chatbot :", e)
+
+            # Arrêt propre de tout
+            print("\n[INFO] Chatbot terminé, arrêt des serveurs...")
+            for name, proc in processes:
+                try:
+                    proc.terminate()
+                    proc.wait()
+                    print("[INFO] {} arrêté".format(name))
+                except Exception:
+                    pass
+            processes.clear()
+
+        elif choix == "2":
+            print("[INFO] Lancement du chatbot seul (les serveurs doivent être déjà actifs)...")
+            try:
+                subprocess.run(
+                    [PYTHON2_PATH, chatbot],
+                    stdout=None,
+                    stderr=None
+                )
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le chatbot :", e)
+
+        elif choix == "3":
+            print("[INFO] Lancement de la reconnaissance faciale uniquement...")
+
+            # 1. Serveur reconnaissance faciale (Python 3.10)
+            print("[INFO] Lancement du serveur vision (ports 5001+5002)...")
+            try:
+                proc_face = subprocess.Popen(
+                    [PYTHON310_PATH, face_server],
+                    stdout=None,
+                    stderr=None
+                )
+                processes.append(("Face Server", proc_face))
+                print("[INFO] Serveur vision lancé (PID {})".format(proc_face.pid))
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le serveur vision :", e)
+                continue
+
+            time.sleep(3)
+
+            # 2. Flux vidéo NAO (Python 2.7) — bloquant
+            print("[INFO] Lancement du flux vidéo NAO...")
+            try:
+                result = subprocess.run(
+                    [PYTHON2_PATH, video_stream],
+                    stdout=None,
+                    stderr=None
+                )
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le flux vidéo :", e)
+
+            # Quand le flux vidéo se termine, on arrête le serveur vision
+            print("\n[INFO] Flux vidéo terminé, arrêt du serveur vision...")
+            for name, proc in processes:
+                try:
+                    proc.terminate()
+                    proc.wait()
+                    print("[INFO] {} arrêté".format(name))
+                except Exception:
+                    pass
+            processes.clear()
+
+        elif choix == "0":
+            if processes:
+                print("[INFO] Arrêt des processus en cours...")
+                for name, proc in processes:
+                    try:
+                        proc.terminate()
+                        proc.wait()
+                        print("[INFO] {} arrêté".format(name))
+                    except Exception:
+                        pass
+                processes.clear()
+            break
+
+        else:
+            print("Choix invalide, réessayez.")

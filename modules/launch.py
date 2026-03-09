@@ -55,6 +55,8 @@ def launch_nao_game():
     - Générer les QR codes
     """
     base_path = os.path.join("modules", "nao_game")
+    script3 = os.path.join(base_path, "load_data.py")
+    script2 = os.path.join(base_path, "nao_game.py")
     while True:
         print("\n=== Nao Game ===")
         print("1 - Charger de nouvelles questions et lancer le jeu")
@@ -66,7 +68,7 @@ def launch_nao_game():
             print("[INFO] Lancement de load_data.py")
             try:
                 result = subprocess.run(
-                    [PYTHON3_PATH, "load_data.py"],
+                    [PYTHON3_PATH, script3],
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,
                     text=True
@@ -87,7 +89,7 @@ def launch_nao_game():
             print("[INFO] Lancement de nao_game.py")
             try:
                 result = subprocess.run(
-                    [PYTHON2_PATH,  "nao_game.py"],
+                    [PYTHON2_PATH,  script2],
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,
                     text=True

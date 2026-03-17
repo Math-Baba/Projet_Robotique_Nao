@@ -247,7 +247,7 @@ def launch_intelligent_vision_robot():
             llm_ok = False
             face_ok = False
 
-            for attempt in range(15):
+            for attempt in range(30):
                 time.sleep(1)
                 try:
                     if not llm_ok:
@@ -265,7 +265,7 @@ def launch_intelligent_vision_robot():
                     pass
                 if llm_ok and face_ok:
                     break
-                print("[INFO] Attente... ({}/15)".format(attempt + 1))
+                print("[INFO] Attente... ({}/30)".format(attempt + 1))
 
             if not llm_ok:
                 print("[ERROR] Serveur LLM non accessible après 15s, abandon.")
@@ -309,7 +309,19 @@ def launch_intelligent_vision_robot():
             processes.clear()
 
         elif choix == "2":
-            print("[INFO] Lancement du chatbot seul (les serveurs doivent être déjà actifs)...")
+            print("[INFO] Lancement du chatbot seul...")
+
+            print("[INFO] Lancement du serveur LLM (port 5000)...")
+            try:
+                proc_llm = subprocess.Popen(
+                    [PYTHON3_PATH, llm_server],
+                )
+                processes.append(("LLM Server", proc_llm))
+                print("[INFO] Serveur LLM lancé (PID {})".format(proc_llm.pid))
+            except Exception as e:
+                print("[ERROR] Impossible de lancer le serveur LLM :", e)
+                continue
+            
             try:
                 subprocess.run(
                     [PYTHON2_PATH, chatbot],

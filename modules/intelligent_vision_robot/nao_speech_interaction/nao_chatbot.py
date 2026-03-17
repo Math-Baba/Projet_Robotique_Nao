@@ -4,9 +4,10 @@ import keyboard
 from naoqi import ALProxy
 import sys
 import os
+import qi
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
-
+from utils.speech_and_animation_player import say_with_animation
 from modules.intelligent_vision_robot.voice_transcription.nao_speech_recognition import (
     record_audio,
     stop_recording,
@@ -20,8 +21,11 @@ from config.pc_config import PC_IP
 LLM_SERVER  = "http://{}:5000/chat".format(PC_IP)
 FACE_SERVER = "http://{}:5001/last_face".format(PC_IP)
 
-tts = ALProxy("ALTextToSpeech", ROBOT_IP, PORT)
+session = qi.Session()
+session.connect("tcp://{}:{}".format(ROBOT_IP, PORT))
 
+tts = session.service("ALTextToSpeech")
+animation_player = session.service("ALAnimationPlayer")
 
 def get_face_name():
     try:
@@ -113,7 +117,11 @@ def process_audio(prenom=None):
         return
 
     print("[CLIENT] NAO va dire : {}".format(answer.encode("utf-8")))
-    tts.say(answer.encode("utf-8"))
+    say_with_animation(tts,
+                   animation_player,
+                   answer.encode("utf-8"),
+                   "animations/Stand/Gestures/Explain_10"
+                   )
     print("[CLIENT] NAO a fini de parler\n")
 
 
@@ -125,13 +133,7 @@ def main():
     print("  ECHAP   -> Quitter")
     print("=" * 50)
 
-    # Reconnaissance faciale une fois au démarrage
-    print("\n[CLIENT] Montrez votre main ouverte devant NAO pour vous identifier...")
-    prenom = wait_for_face(timeout=15.0)
-    if prenom:
-        tts.say("Bonjour {} !".format(prenom).encode("utf-8"))
-    else:
-        tts.say("Bonjour !".encode("utf-8"))
+    prenom=None
 
     while True:
         print("\n[CLIENT] En attente... (ESPACE pour parler, ECHAP pour quitter)")

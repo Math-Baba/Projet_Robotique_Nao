@@ -3,6 +3,7 @@ import subprocess
 import os
 import time
 import requests
+import webbrowser
 from config.python_paths import PYTHON2_PATH, PYTHON3_PATH, PYTHON310_PATH
 
 def launch_scenario():
@@ -387,3 +388,22 @@ def launch_intelligent_vision_robot():
 
         else:
             print("Choix invalide, réessayez.")
+
+
+def launch_web_interface():
+    """Lance l'interface web du projet."""
+    web_app = os.path.join("web", "app.py")
+    if not os.path.exists(web_app):
+        print("[ERROR] Interface web introuvable : {}".format(web_app))
+        return
+
+    try:
+        proc = subprocess.Popen([PYTHON3_PATH, web_app])
+        url = "http://127.0.0.1:8000"
+        print("[INFO] Interface web lancée sur {} (PID {})".format(url, proc.pid))
+        try:
+            webbrowser.open(url)
+        except Exception:
+            pass
+    except Exception as e:
+        print("[ERROR] Impossible de lancer l'interface web : {}".format(e))

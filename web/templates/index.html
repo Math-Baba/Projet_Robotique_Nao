@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface Web - Projet NAO</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <h1>Interface Web du Projet NAO</h1>
+            <p>Dashboard de contrôle des modules, de teste de connexion et de surveillance des serveurs en un seul endroit.</p>
+        </header>
+
+        <section class="card">
+            <h2>Connexion NAO</h2>
+            <div class="field-row">
+                <label for="robot-ip">IP du robot :</label>
+                <input id="robot-ip" type="text" placeholder="Ex. 11.0.0.150" />
+            </div>
+            <button id="save-ip">Sauvegarder et tester</button>
+            <div id="connect-result" class="message"></div>
+        </section>
+
+        <section class="card actions-card">
+            <h2>Actions rapides</h2>
+            <div class="buttons-grid">
+                <button data-action="scenario_intro">Introduction Odysseo</button>
+                <button data-action="scenario_conclusion">Conclusion Odysseo</button>
+                <button data-action="nao_game">Lancer QR Game</button>
+                <button data-action="motion_scenario">Motion Controller</button>
+                <button data-action="motion_game">Jeu de ramassage</button>
+                <button data-action="ivr_full">IA complète</button>
+                <button data-action="ivr_chatbot">Chatbot seul</button>
+                <button data-action="ivr_face">Reconnaissance seule</button>
+                <button data-action="stop_all" class="danger">Arrêter tout</button>
+            </div>
+            <div id="action-result" class="message"></div>
+        </section>
+
+        <section class="card status-card">
+            <h2>Statut</h2>
+            <div class="status-grid">
+                <div>
+                    <strong>Processus actifs :</strong>
+                    <pre id="process-list">Chargement...</pre>
+                </div>
+                <div>
+                    <strong>Dernier visage reconnu :</strong>
+                    <div id="face-name">Chargement...</div>
+                </div>
+                <div>
+                    <strong>Historique LLM :</strong>
+                    <pre id="llm-history">Chargement...</pre>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

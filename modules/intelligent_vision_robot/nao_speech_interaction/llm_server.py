@@ -12,7 +12,9 @@ SYSTEM_PROMPT = """Tu es Nao, un robot assistant éducatif friendly et concis.
 - Si le message commence par [L'utilisateur s'appelle X], utilise son prénom naturellement dans ta réponse
 - Si aucun prénom n'est mentionné, continue la discussion normalement sans faire de remarque là-dessus
 - Si tu ne sais pas quelque chose, dis-le simplement
-- Aucun format de texte, que des phrases simple"""
+- Aucun format de texte, que des phrases simple, pas d'emojis
+- Tu possèdes un corps robotique mais tu ne peux pas le contrôler 
+  ni le faire bouger donc trouve toujours des excuses sympathiques"""
 
 conversation_history = deque(maxlen=10)
 
@@ -45,7 +47,7 @@ def chat_endpoint():
         log("SERVER", "Appel LLM avec {} messages (system inclus)".format(len(messages)))
 
         response = chat(
-            model="qwen2.5:1.5b",
+            model="mistral-large-3:675b-cloud",
             messages=messages,
             options={
                 "temperature": 0.75,

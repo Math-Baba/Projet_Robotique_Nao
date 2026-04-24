@@ -222,3 +222,4 @@ models/           # Poids YOLO visage, etc.
 
 ## Auteur
 - **Math-Baba** - [GitHub](https://github.com/Math-Baba)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

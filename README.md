@@ -2,6 +2,8 @@
 
 Ce dépôt regroupe les modules développés autour du robot **NAO** (SoftBank Robotics) : reconnaissance faciale, interaction vocale avec LLM, scénarios pédagogiques, jeux et contrôle moteur. Le PC joue le rôle de serveur de traitement (vision, base de données, API HTTP) tandis que le NAO exécute des scripts **Python 2.7** avec le SDK **NAOqi**.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ---
 
 ## Description du projet
@@ -222,4 +224,4 @@ models/           # Poids YOLO visage, etc.
 
 ## Auteur
 - **Math-Baba** - [GitHub](https://github.com/Math-Baba)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
